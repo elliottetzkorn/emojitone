@@ -143,7 +143,9 @@ rl.on('line', function (text) {
         + "}"
     )
 
-    f.writeFileSync('README.md', "# EmojiTone"
+    f.writeFileSync('README.md', "# EmojiTone "
+        + "\n"
+        + "## 👋👋🏿👋🏾👋🏽👋🏼👋🏻 Welcome"
         + "\n"
         + "### The list of currently supported emoji is:"
         + "\n"
