@@ -173,7 +173,7 @@ rl.on('line', function (text) {
         + "\n"
         + "## Recommended practices"
         + "\n"
-        + "I recommend that you combine this package with simple state management on your end. I have included in this repository an example Next.js application which stores the state in the browser's localestorage. Here is a link to it running live."
+        + "It is a good idea to combine this package with simple state management on your end. I have included in this repository an example Next.js application which stores the state in the browser's localestorage. Here is a link to it running live."
         + "\n"
         + "## Currently supported emoji:"
         + "\n"
