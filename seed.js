@@ -225,8 +225,3 @@ function singleInstanceOfTone(array) {
 
     return numOfTrue == 1
 }
-
-
-
-
-
