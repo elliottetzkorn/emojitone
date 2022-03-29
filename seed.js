@@ -81,18 +81,12 @@ rl.on('line', function (text) {
     })
 
     let defaultEmojiArray = []
-    let indexFileImports = ""
     let indexFileCases = ""
+    let indexFileFunctions = ""
 
     for (var i = 0; i < filteredArray.length; i++) {
         fileToGen = filteredArray[i]
         defaultEmojiArray.push("'" + fileToGen.default + "'")
-        indexFileImports = indexFileImports
-            + "import { "
-            + fileToGen.name
-            + " } from './emojis/"
-            + fileToGen.name
-            + "'\n"
 
         indexFileCases = indexFileCases
             + "        case '"
@@ -103,8 +97,8 @@ rl.on('line', function (text) {
             + "(tone)"
             + "\n"
 
-        f.writeFileSync(__dirname + '/src/emojis/' + fileToGen.name + '.ts',
-            "import { SkinTones } from '../types'\n\nexport function "
+        indexFileFunctions = indexFileFunctions
+            + "function "
             + fileToGen.name
             + "(tone: SkinTones) {\n"
             + "    switch(tone) {\n        case 'dark':\n            return'"
@@ -119,8 +113,8 @@ rl.on('line', function (text) {
             + fileToGen.light
             + "'\n        default:\n            return'"
             + fileToGen.default
-            + "'\n    }\n}"
-        )
+            + "'\n    }\n}\n\n"
+
     }
 
     f.writeFileSync(__dirname + '/src/types.ts',
@@ -131,23 +125,24 @@ rl.on('line', function (text) {
 
     f.writeFileSync(__dirname + '/src/index.tsx',
         "import { SkinToneEmojis, SkinTones } from './types'\n"
-        + indexFileImports
         + "\n"
         + "export const emojiTone = (emoji: SkinToneEmojis, tone: SkinTones) => {\n"
         + "    switch (emoji) {\n"
         + indexFileCases
         + "        default:\n"
-        + "            return '👋'"
+        + "            return emoji"
         + "\n"
         + "    }\n"
         + "}"
+        + "\n\n"
+        + indexFileFunctions
     )
 
     f.writeFileSync('README.md', "# EmojiTone "
         + "\n"
         + "## 👋👋🏿👋🏾👋🏽👋🏼👋🏻 Welcome"
         + "\n"
-        + "Emoji are fun and useful tools for communicating application UI. They add a lot of life to buttons, menus and user actions. I recently built [a website](https://www.goodvids.so) which heavily uses them, and realized after completing the design, and adding an option for theme toggle, that it would be a lovely touch to allow users to also tweak the skin tones of the emoji used in the UI, to make the website feel more inviting. I could not find any packages to help me do that, so I decided to build EmojiTone.<br><br>This package is straightforward and non-opiniated. Simply pass it an emoji, and a tone, and it returns the correct emoji back modified. You can use this with state management on your end to allow users to set this tone as part of their user settings. You can then store that state on a server, in the browser, or however you like. This package is just here to help you with the long and complicated switch statements! Enjoy 💓."
+        + "Emoji are useful tools for communicating application behavior. I recently finished [a project](https://www.goodvids.so) which heavily uses them and realized while building that I wanted to add an option for users of the project to customize the interface to their liking. There are plenty of packages to do this for theme, but I could not find any for emoji skin tone, so I decided to build EmojiTone.<br><br>This package is a simple interface for building with tone-changing emojis. You can use this with state management on your end to allow users to set the tone as part of their user settings. You can then store that state on a server, in the browser, or however you like. This package is just here to help you with the long and complicated switch statements! Enjoy 💓."
         + "\n"
         + "### The list of currently supported emoji is:"
         + "\n"

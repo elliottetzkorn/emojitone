@@ -1,289 +1,4 @@
 import { SkinToneEmojis, SkinTones } from './types'
-import { waving_hand } from './emojis/waving_hand'
-import { raised_back_of_hand } from './emojis/raised_back_of_hand'
-import { hand_with_fingers_splayed } from './emojis/hand_with_fingers_splayed'
-import { raised_hand } from './emojis/raised_hand'
-import { vulcansalute } from './emojis/vulcansalute'
-import { rightwards_hand } from './emojis/rightwards_hand'
-import { leftwards_hand } from './emojis/leftwards_hand'
-import { palm_downhand } from './emojis/palm_downhand'
-import { palm_up_hand } from './emojis/palm_up_hand'
-import { ok_hand } from './emojis/ok_hand'
-import { pinched_fingers } from './emojis/pinched_fingers'
-import { pinching_hand } from './emojis/pinching_hand'
-import { victory_hand } from './emojis/victory_hand'
-import { crossed_fingers } from './emojis/crossed_fingers'
-import { hand_with_index_finger_and_thumb_crossed } from './emojis/hand_with_index_finger_and_thumb_crossed'
-import { loveyou_gesture } from './emojis/loveyou_gesture'
-import { signof_the_horns } from './emojis/signof_the_horns'
-import { call_me_hand } from './emojis/call_me_hand'
-import { backhand_index_pointing_left } from './emojis/backhand_index_pointing_left'
-import { backhand_index_pointing_right } from './emojis/backhand_index_pointing_right'
-import { backhand_index_pointing_up } from './emojis/backhand_index_pointing_up'
-import { middle_finger } from './emojis/middle_finger'
-import { backhand_index_pointing_down } from './emojis/backhand_index_pointing_down'
-import { index_pointing_up } from './emojis/index_pointing_up'
-import { index_pointing_at_the_viewer } from './emojis/index_pointing_at_the_viewer'
-import { thumbs_up } from './emojis/thumbs_up'
-import { thumbs_down } from './emojis/thumbs_down'
-import { raised_fist } from './emojis/raised_fist'
-import { oncoming_fist } from './emojis/oncoming_fist'
-import { leftfacing_fist } from './emojis/leftfacing_fist'
-import { rightfacing_fist } from './emojis/rightfacing_fist'
-import { clapping_hands } from './emojis/clapping_hands'
-import { raising_hands } from './emojis/raising_hands'
-import { heart_hands } from './emojis/heart_hands'
-import { openhands } from './emojis/openhands'
-import { palms_up_together } from './emojis/palms_up_together'
-import { handshake } from './emojis/handshake'
-import { folded_hands } from './emojis/folded_hands'
-import { writing_hand } from './emojis/writing_hand'
-import { nail_polish } from './emojis/nail_polish'
-import { selfie } from './emojis/selfie'
-import { flexed_biceps } from './emojis/flexed_biceps'
-import { leg } from './emojis/leg'
-import { foot } from './emojis/foot'
-import { ear } from './emojis/ear'
-import { ear_with_hearing_aid } from './emojis/ear_with_hearing_aid'
-import { nose } from './emojis/nose'
-import { baby } from './emojis/baby'
-import { child } from './emojis/child'
-import { boy } from './emojis/boy'
-import { girl } from './emojis/girl'
-import { person } from './emojis/person'
-import { man } from './emojis/man'
-import { woman } from './emojis/woman'
-import { older_person } from './emojis/older_person'
-import { old_man } from './emojis/old_man'
-import { old_woman } from './emojis/old_woman'
-import { personfrowning } from './emojis/personfrowning'
-import { manfrowning } from './emojis/manfrowning'
-import { womanfrowning } from './emojis/womanfrowning'
-import { personpouting } from './emojis/personpouting'
-import { manpouting } from './emojis/manpouting'
-import { womanpouting } from './emojis/womanpouting'
-import { persongesturing_no } from './emojis/persongesturing_no'
-import { mangesturing_no } from './emojis/mangesturing_no'
-import { womangesturing_no } from './emojis/womangesturing_no'
-import { persongesturing_ok } from './emojis/persongesturing_ok'
-import { mangesturing_ok } from './emojis/mangesturing_ok'
-import { womangesturing_ok } from './emojis/womangesturing_ok'
-import { persontipping_hand } from './emojis/persontipping_hand'
-import { mantipping_hand } from './emojis/mantipping_hand'
-import { womantipping_hand } from './emojis/womantipping_hand'
-import { personraising_hand } from './emojis/personraising_hand'
-import { manraising_hand } from './emojis/manraising_hand'
-import { womanraising_hand } from './emojis/womanraising_hand'
-import { deaf_person } from './emojis/deaf_person'
-import { deaf_man } from './emojis/deaf_man'
-import { deaf_woman } from './emojis/deaf_woman'
-import { personbowing } from './emojis/personbowing'
-import { manbowing } from './emojis/manbowing'
-import { womanbowing } from './emojis/womanbowing'
-import { personfacepalming } from './emojis/personfacepalming'
-import { manfacepalming } from './emojis/manfacepalming'
-import { womanfacepalming } from './emojis/womanfacepalming'
-import { personshrugging } from './emojis/personshrugging'
-import { manshrugging } from './emojis/manshrugging'
-import { womanshrugging } from './emojis/womanshrugging'
-import { health_worker } from './emojis/health_worker'
-import { manhealth_worker } from './emojis/manhealth_worker'
-import { womanhealth_worker } from './emojis/womanhealth_worker'
-import { student } from './emojis/student'
-import { manstudent } from './emojis/manstudent'
-import { womanstudent } from './emojis/womanstudent'
-import { teacher } from './emojis/teacher'
-import { manteacher } from './emojis/manteacher'
-import { womanteacher } from './emojis/womanteacher'
-import { judge } from './emojis/judge'
-import { manjudge } from './emojis/manjudge'
-import { womanjudge } from './emojis/womanjudge'
-import { farmer } from './emojis/farmer'
-import { manfarmer } from './emojis/manfarmer'
-import { womanfarmer } from './emojis/womanfarmer'
-import { cook } from './emojis/cook'
-import { mancook } from './emojis/mancook'
-import { womancook } from './emojis/womancook'
-import { mechanic } from './emojis/mechanic'
-import { manmechanic } from './emojis/manmechanic'
-import { womanmechanic } from './emojis/womanmechanic'
-import { factory_worker } from './emojis/factory_worker'
-import { manfactory_worker } from './emojis/manfactory_worker'
-import { womanfactory_worker } from './emojis/womanfactory_worker'
-import { office_worker } from './emojis/office_worker'
-import { manoffice_worker } from './emojis/manoffice_worker'
-import { womanoffice_worker } from './emojis/womanoffice_worker'
-import { scientist } from './emojis/scientist'
-import { manscientist } from './emojis/manscientist'
-import { womanscientist } from './emojis/womanscientist'
-import { technologist } from './emojis/technologist'
-import { mantechnologist } from './emojis/mantechnologist'
-import { womantechnologist } from './emojis/womantechnologist'
-import { singer } from './emojis/singer'
-import { mansinger } from './emojis/mansinger'
-import { womansinger } from './emojis/womansinger'
-import { artist } from './emojis/artist'
-import { manartist } from './emojis/manartist'
-import { womanartist } from './emojis/womanartist'
-import { pilot } from './emojis/pilot'
-import { manpilot } from './emojis/manpilot'
-import { womanpilot } from './emojis/womanpilot'
-import { astronaut } from './emojis/astronaut'
-import { manastronaut } from './emojis/manastronaut'
-import { womanastronaut } from './emojis/womanastronaut'
-import { firefighter } from './emojis/firefighter'
-import { manfirefighter } from './emojis/manfirefighter'
-import { womanfirefighter } from './emojis/womanfirefighter'
-import { police_officer } from './emojis/police_officer'
-import { manpolice_officer } from './emojis/manpolice_officer'
-import { womanpolice_officer } from './emojis/womanpolice_officer'
-import { detective } from './emojis/detective'
-import { mandetective } from './emojis/mandetective'
-import { womandetective } from './emojis/womandetective'
-import { guard } from './emojis/guard'
-import { manguard } from './emojis/manguard'
-import { womanguard } from './emojis/womanguard'
-import { ninja } from './emojis/ninja'
-import { constructionworker } from './emojis/constructionworker'
-import { manconstructionworker } from './emojis/manconstructionworker'
-import { womanconstructionworker } from './emojis/womanconstructionworker'
-import { personwith_crown } from './emojis/personwith_crown'
-import { prince } from './emojis/prince'
-import { princess } from './emojis/princess'
-import { personwearing_turban } from './emojis/personwearing_turban'
-import { manwearing_turban } from './emojis/manwearing_turban'
-import { womanwearing_turban } from './emojis/womanwearing_turban'
-import { personwith_skullcap } from './emojis/personwith_skullcap'
-import { womanwith_headscarf } from './emojis/womanwith_headscarf'
-import { personintuxedo } from './emojis/personintuxedo'
-import { manintuxedo } from './emojis/manintuxedo'
-import { womanintuxedo } from './emojis/womanintuxedo'
-import { personwith_veil } from './emojis/personwith_veil'
-import { manwith_veil } from './emojis/manwith_veil'
-import { womanwith_veil } from './emojis/womanwith_veil'
-import { pregnant_woman } from './emojis/pregnant_woman'
-import { pregnant_man } from './emojis/pregnant_man'
-import { pregnant_person } from './emojis/pregnant_person'
-import { breastfeeding } from './emojis/breastfeeding'
-import { womanfeeding_baby } from './emojis/womanfeeding_baby'
-import { manfeeding_baby } from './emojis/manfeeding_baby'
-import { personfeeding_baby } from './emojis/personfeeding_baby'
-import { baby_angel } from './emojis/baby_angel'
-import { santa_claus } from './emojis/santa_claus'
-import { mrs_claus } from './emojis/mrs_claus'
-import { mx_claus } from './emojis/mx_claus'
-import { superhero } from './emojis/superhero'
-import { mansuperhero } from './emojis/mansuperhero'
-import { womansuperhero } from './emojis/womansuperhero'
-import { supervillain } from './emojis/supervillain'
-import { mansupervillain } from './emojis/mansupervillain'
-import { womansupervillain } from './emojis/womansupervillain'
-import { mage } from './emojis/mage'
-import { manmage } from './emojis/manmage'
-import { womanmage } from './emojis/womanmage'
-import { fairy } from './emojis/fairy'
-import { manfairy } from './emojis/manfairy'
-import { womanfairy } from './emojis/womanfairy'
-import { vampire } from './emojis/vampire'
-import { manvampire } from './emojis/manvampire'
-import { womanvampire } from './emojis/womanvampire'
-import { merperson } from './emojis/merperson'
-import { merman } from './emojis/merman'
-import { mermaid } from './emojis/mermaid'
-import { elf } from './emojis/elf'
-import { manelf } from './emojis/manelf'
-import { womanelf } from './emojis/womanelf'
-import { persongetting_massage } from './emojis/persongetting_massage'
-import { mangetting_massage } from './emojis/mangetting_massage'
-import { womangetting_massage } from './emojis/womangetting_massage'
-import { persongetting_haircut } from './emojis/persongetting_haircut'
-import { mangetting_haircut } from './emojis/mangetting_haircut'
-import { womangetting_haircut } from './emojis/womangetting_haircut'
-import { personwalking } from './emojis/personwalking'
-import { manwalking } from './emojis/manwalking'
-import { womanwalking } from './emojis/womanwalking'
-import { personstanding } from './emojis/personstanding'
-import { manstanding } from './emojis/manstanding'
-import { womanstanding } from './emojis/womanstanding'
-import { personkneeling } from './emojis/personkneeling'
-import { mankneeling } from './emojis/mankneeling'
-import { womankneeling } from './emojis/womankneeling'
-import { personwith_white_cane } from './emojis/personwith_white_cane'
-import { manwith_white_cane } from './emojis/manwith_white_cane'
-import { womanwith_white_cane } from './emojis/womanwith_white_cane'
-import { personinmotorized_wheelchair } from './emojis/personinmotorized_wheelchair'
-import { maninmotorized_wheelchair } from './emojis/maninmotorized_wheelchair'
-import { womaninmotorized_wheelchair } from './emojis/womaninmotorized_wheelchair'
-import { personinmanual_wheelchair } from './emojis/personinmanual_wheelchair'
-import { maninmanual_wheelchair } from './emojis/maninmanual_wheelchair'
-import { womaninmanual_wheelchair } from './emojis/womaninmanual_wheelchair'
-import { personrunning } from './emojis/personrunning'
-import { manrunning } from './emojis/manrunning'
-import { womanrunning } from './emojis/womanrunning'
-import { womandancing } from './emojis/womandancing'
-import { mandancing } from './emojis/mandancing'
-import { personinsuit_levitating } from './emojis/personinsuit_levitating'
-import { personinsteamy_room } from './emojis/personinsteamy_room'
-import { maninsteamy_room } from './emojis/maninsteamy_room'
-import { womaninsteamy_room } from './emojis/womaninsteamy_room'
-import { personclimbing } from './emojis/personclimbing'
-import { manclimbing } from './emojis/manclimbing'
-import { womanclimbing } from './emojis/womanclimbing'
-import { horse_racing } from './emojis/horse_racing'
-import { snowboarder } from './emojis/snowboarder'
-import { persongolfing } from './emojis/persongolfing'
-import { mangolfing } from './emojis/mangolfing'
-import { womangolfing } from './emojis/womangolfing'
-import { personsurfing } from './emojis/personsurfing'
-import { mansurfing } from './emojis/mansurfing'
-import { womansurfing } from './emojis/womansurfing'
-import { personrowing_boat } from './emojis/personrowing_boat'
-import { manrowing_boat } from './emojis/manrowing_boat'
-import { womanrowing_boat } from './emojis/womanrowing_boat'
-import { personswimming } from './emojis/personswimming'
-import { manswimming } from './emojis/manswimming'
-import { womanswimming } from './emojis/womanswimming'
-import { personbouncing_ball } from './emojis/personbouncing_ball'
-import { manbouncing_ball } from './emojis/manbouncing_ball'
-import { womanbouncing_ball } from './emojis/womanbouncing_ball'
-import { personlifting_weights } from './emojis/personlifting_weights'
-import { manlifting_weights } from './emojis/manlifting_weights'
-import { womanlifting_weights } from './emojis/womanlifting_weights'
-import { personbiking } from './emojis/personbiking'
-import { manbiking } from './emojis/manbiking'
-import { womanbiking } from './emojis/womanbiking'
-import { personmountainbiking } from './emojis/personmountainbiking'
-import { manmountainbiking } from './emojis/manmountainbiking'
-import { womanmountainbiking } from './emojis/womanmountainbiking'
-import { personcartwheeling } from './emojis/personcartwheeling'
-import { mancartwheeling } from './emojis/mancartwheeling'
-import { womancartwheeling } from './emojis/womancartwheeling'
-import { personplaying_water_polo } from './emojis/personplaying_water_polo'
-import { manplaying_water_polo } from './emojis/manplaying_water_polo'
-import { womanplaying_water_polo } from './emojis/womanplaying_water_polo'
-import { personplaying_handball } from './emojis/personplaying_handball'
-import { manplaying_handball } from './emojis/manplaying_handball'
-import { womanplaying_handball } from './emojis/womanplaying_handball'
-import { personjuggling } from './emojis/personjuggling'
-import { manjuggling } from './emojis/manjuggling'
-import { womanjuggling } from './emojis/womanjuggling'
-import { personinlotus_position } from './emojis/personinlotus_position'
-import { maninlotus_position } from './emojis/maninlotus_position'
-import { womaninlotus_position } from './emojis/womaninlotus_position'
-import { persontaking_bath } from './emojis/persontaking_bath'
-import { personinbed } from './emojis/personinbed'
-import { people_holding_hands } from './emojis/people_holding_hands'
-import { womenholding_hands } from './emojis/womenholding_hands'
-import { womanand_manholding_hands } from './emojis/womanand_manholding_hands'
-import { menholding_hands } from './emojis/menholding_hands'
-import { kiss } from './emojis/kiss'
-import { kiss_womanman } from './emojis/kiss_womanman'
-import { kiss_manman } from './emojis/kiss_manman'
-import { kiss_womanwoman } from './emojis/kiss_womanwoman'
-import { couple_with_heart } from './emojis/couple_with_heart'
-import { couple_with_heart_womanman } from './emojis/couple_with_heart_womanman'
-import { couple_with_heart_manman } from './emojis/couple_with_heart_manman'
-import { couple_with_heart_womanwoman } from './emojis/couple_with_heart_womanwoman'
 
 export const emojiTone = (emoji: SkinToneEmojis, tone: SkinTones) => {
     switch (emoji) {
@@ -858,6 +573,4852 @@ export const emojiTone = (emoji: SkinToneEmojis, tone: SkinTones) => {
         case '👩‍❤️‍👩':
             return couple_with_heart_womanwoman(tone)
         default:
-            return '👋'
+            return emoji
     }
 }
+
+function waving_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👋🏿'
+        case 'medium-dark':
+            return'👋🏾'
+        case 'medium':
+            return'👋🏽'
+        case 'medium-light':
+            return'👋🏼'
+        case 'light':
+            return'👋🏻'
+        default:
+            return'👋'
+    }
+}
+
+function raised_back_of_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤚🏿'
+        case 'medium-dark':
+            return'🤚🏾'
+        case 'medium':
+            return'🤚🏽'
+        case 'medium-light':
+            return'🤚🏼'
+        case 'light':
+            return'🤚🏻'
+        default:
+            return'🤚'
+    }
+}
+
+function hand_with_fingers_splayed(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🖐🏿'
+        case 'medium-dark':
+            return'🖐🏾'
+        case 'medium':
+            return'🖐🏽'
+        case 'medium-light':
+            return'🖐🏼'
+        case 'light':
+            return'🖐🏻'
+        default:
+            return'🖐️'
+    }
+}
+
+function raised_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'✋🏿'
+        case 'medium-dark':
+            return'✋🏾'
+        case 'medium':
+            return'✋🏽'
+        case 'medium-light':
+            return'✋🏼'
+        case 'light':
+            return'✋🏻'
+        default:
+            return'✋'
+    }
+}
+
+function vulcansalute(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🖖🏿'
+        case 'medium-dark':
+            return'🖖🏾'
+        case 'medium':
+            return'🖖🏽'
+        case 'medium-light':
+            return'🖖🏼'
+        case 'light':
+            return'🖖🏻'
+        default:
+            return'🖖'
+    }
+}
+
+function rightwards_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫱🏿'
+        case 'medium-dark':
+            return'🫱🏾'
+        case 'medium':
+            return'🫱🏽'
+        case 'medium-light':
+            return'🫱🏼'
+        case 'light':
+            return'🫱🏻'
+        default:
+            return'🫱'
+    }
+}
+
+function leftwards_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫲🏿'
+        case 'medium-dark':
+            return'🫲🏾'
+        case 'medium':
+            return'🫲🏽'
+        case 'medium-light':
+            return'🫲🏼'
+        case 'light':
+            return'🫲🏻'
+        default:
+            return'🫲'
+    }
+}
+
+function palm_downhand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫳🏿'
+        case 'medium-dark':
+            return'🫳🏾'
+        case 'medium':
+            return'🫳🏽'
+        case 'medium-light':
+            return'🫳🏼'
+        case 'light':
+            return'🫳🏻'
+        default:
+            return'🫳'
+    }
+}
+
+function palm_up_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫴🏿'
+        case 'medium-dark':
+            return'🫴🏾'
+        case 'medium':
+            return'🫴🏽'
+        case 'medium-light':
+            return'🫴🏼'
+        case 'light':
+            return'🫴🏻'
+        default:
+            return'🫴'
+    }
+}
+
+function ok_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👌🏿'
+        case 'medium-dark':
+            return'👌🏾'
+        case 'medium':
+            return'👌🏽'
+        case 'medium-light':
+            return'👌🏼'
+        case 'light':
+            return'👌🏻'
+        default:
+            return'👌'
+    }
+}
+
+function pinched_fingers(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤌🏿'
+        case 'medium-dark':
+            return'🤌🏾'
+        case 'medium':
+            return'🤌🏽'
+        case 'medium-light':
+            return'🤌🏼'
+        case 'light':
+            return'🤌🏻'
+        default:
+            return'🤌'
+    }
+}
+
+function pinching_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤏🏿'
+        case 'medium-dark':
+            return'🤏🏾'
+        case 'medium':
+            return'🤏🏽'
+        case 'medium-light':
+            return'🤏🏼'
+        case 'light':
+            return'🤏🏻'
+        default:
+            return'🤏'
+    }
+}
+
+function victory_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'✌🏿'
+        case 'medium-dark':
+            return'✌🏾'
+        case 'medium':
+            return'✌🏽'
+        case 'medium-light':
+            return'✌🏼'
+        case 'light':
+            return'✌🏻'
+        default:
+            return'✌️'
+    }
+}
+
+function crossed_fingers(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤞🏿'
+        case 'medium-dark':
+            return'🤞🏾'
+        case 'medium':
+            return'🤞🏽'
+        case 'medium-light':
+            return'🤞🏼'
+        case 'light':
+            return'🤞🏻'
+        default:
+            return'🤞'
+    }
+}
+
+function hand_with_index_finger_and_thumb_crossed(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫰🏿'
+        case 'medium-dark':
+            return'🫰🏾'
+        case 'medium':
+            return'🫰🏽'
+        case 'medium-light':
+            return'🫰🏼'
+        case 'light':
+            return'🫰🏻'
+        default:
+            return'🫰'
+    }
+}
+
+function loveyou_gesture(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤟🏿'
+        case 'medium-dark':
+            return'🤟🏾'
+        case 'medium':
+            return'🤟🏽'
+        case 'medium-light':
+            return'🤟🏼'
+        case 'light':
+            return'🤟🏻'
+        default:
+            return'🤟'
+    }
+}
+
+function signof_the_horns(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤘🏿'
+        case 'medium-dark':
+            return'🤘🏾'
+        case 'medium':
+            return'🤘🏽'
+        case 'medium-light':
+            return'🤘🏼'
+        case 'light':
+            return'🤘🏻'
+        default:
+            return'🤘'
+    }
+}
+
+function call_me_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤙🏿'
+        case 'medium-dark':
+            return'🤙🏾'
+        case 'medium':
+            return'🤙🏽'
+        case 'medium-light':
+            return'🤙🏼'
+        case 'light':
+            return'🤙🏻'
+        default:
+            return'🤙'
+    }
+}
+
+function backhand_index_pointing_left(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👈🏿'
+        case 'medium-dark':
+            return'👈🏾'
+        case 'medium':
+            return'👈🏽'
+        case 'medium-light':
+            return'👈🏼'
+        case 'light':
+            return'👈🏻'
+        default:
+            return'👈'
+    }
+}
+
+function backhand_index_pointing_right(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👉🏿'
+        case 'medium-dark':
+            return'👉🏾'
+        case 'medium':
+            return'👉🏽'
+        case 'medium-light':
+            return'👉🏼'
+        case 'light':
+            return'👉🏻'
+        default:
+            return'👉'
+    }
+}
+
+function backhand_index_pointing_up(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👆🏿'
+        case 'medium-dark':
+            return'👆🏾'
+        case 'medium':
+            return'👆🏽'
+        case 'medium-light':
+            return'👆🏼'
+        case 'light':
+            return'👆🏻'
+        default:
+            return'👆'
+    }
+}
+
+function middle_finger(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🖕🏿'
+        case 'medium-dark':
+            return'🖕🏾'
+        case 'medium':
+            return'🖕🏽'
+        case 'medium-light':
+            return'🖕🏼'
+        case 'light':
+            return'🖕🏻'
+        default:
+            return'🖕'
+    }
+}
+
+function backhand_index_pointing_down(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👇🏿'
+        case 'medium-dark':
+            return'👇🏾'
+        case 'medium':
+            return'👇🏽'
+        case 'medium-light':
+            return'👇🏼'
+        case 'light':
+            return'👇🏻'
+        default:
+            return'👇'
+    }
+}
+
+function index_pointing_up(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'☝🏿'
+        case 'medium-dark':
+            return'☝🏾'
+        case 'medium':
+            return'☝🏽'
+        case 'medium-light':
+            return'☝🏼'
+        case 'light':
+            return'☝🏻'
+        default:
+            return'☝️'
+    }
+}
+
+function index_pointing_at_the_viewer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫵🏿'
+        case 'medium-dark':
+            return'🫵🏾'
+        case 'medium':
+            return'🫵🏽'
+        case 'medium-light':
+            return'🫵🏼'
+        case 'light':
+            return'🫵🏻'
+        default:
+            return'🫵'
+    }
+}
+
+function thumbs_up(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👍🏿'
+        case 'medium-dark':
+            return'👍🏾'
+        case 'medium':
+            return'👍🏽'
+        case 'medium-light':
+            return'👍🏼'
+        case 'light':
+            return'👍🏻'
+        default:
+            return'👍'
+    }
+}
+
+function thumbs_down(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👎🏿'
+        case 'medium-dark':
+            return'👎🏾'
+        case 'medium':
+            return'👎🏽'
+        case 'medium-light':
+            return'👎🏼'
+        case 'light':
+            return'👎🏻'
+        default:
+            return'👎'
+    }
+}
+
+function raised_fist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'✊🏿'
+        case 'medium-dark':
+            return'✊🏾'
+        case 'medium':
+            return'✊🏽'
+        case 'medium-light':
+            return'✊🏼'
+        case 'light':
+            return'✊🏻'
+        default:
+            return'✊'
+    }
+}
+
+function oncoming_fist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👊🏿'
+        case 'medium-dark':
+            return'👊🏾'
+        case 'medium':
+            return'👊🏽'
+        case 'medium-light':
+            return'👊🏼'
+        case 'light':
+            return'👊🏻'
+        default:
+            return'👊'
+    }
+}
+
+function leftfacing_fist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤛🏿'
+        case 'medium-dark':
+            return'🤛🏾'
+        case 'medium':
+            return'🤛🏽'
+        case 'medium-light':
+            return'🤛🏼'
+        case 'light':
+            return'🤛🏻'
+        default:
+            return'🤛'
+    }
+}
+
+function rightfacing_fist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤜🏿'
+        case 'medium-dark':
+            return'🤜🏾'
+        case 'medium':
+            return'🤜🏽'
+        case 'medium-light':
+            return'🤜🏼'
+        case 'light':
+            return'🤜🏻'
+        default:
+            return'🤜'
+    }
+}
+
+function clapping_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👏🏿'
+        case 'medium-dark':
+            return'👏🏾'
+        case 'medium':
+            return'👏🏽'
+        case 'medium-light':
+            return'👏🏼'
+        case 'light':
+            return'👏🏻'
+        default:
+            return'👏'
+    }
+}
+
+function raising_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙌🏿'
+        case 'medium-dark':
+            return'🙌🏾'
+        case 'medium':
+            return'🙌🏽'
+        case 'medium-light':
+            return'🙌🏼'
+        case 'light':
+            return'🙌🏻'
+        default:
+            return'🙌'
+    }
+}
+
+function heart_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫶🏿'
+        case 'medium-dark':
+            return'🫶🏾'
+        case 'medium':
+            return'🫶🏽'
+        case 'medium-light':
+            return'🫶🏼'
+        case 'light':
+            return'🫶🏻'
+        default:
+            return'🫶'
+    }
+}
+
+function openhands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👐🏿'
+        case 'medium-dark':
+            return'👐🏾'
+        case 'medium':
+            return'👐🏽'
+        case 'medium-light':
+            return'👐🏼'
+        case 'light':
+            return'👐🏻'
+        default:
+            return'👐'
+    }
+}
+
+function palms_up_together(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤲🏿'
+        case 'medium-dark':
+            return'🤲🏾'
+        case 'medium':
+            return'🤲🏽'
+        case 'medium-light':
+            return'🤲🏼'
+        case 'light':
+            return'🤲🏻'
+        default:
+            return'🤲'
+    }
+}
+
+function handshake(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤝🏿'
+        case 'medium-dark':
+            return'🤝🏾'
+        case 'medium':
+            return'🤝🏽'
+        case 'medium-light':
+            return'🤝🏼'
+        case 'light':
+            return'🤝🏻'
+        default:
+            return'🤝'
+    }
+}
+
+function folded_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙏🏿'
+        case 'medium-dark':
+            return'🙏🏾'
+        case 'medium':
+            return'🙏🏽'
+        case 'medium-light':
+            return'🙏🏼'
+        case 'light':
+            return'🙏🏻'
+        default:
+            return'🙏'
+    }
+}
+
+function writing_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'✍🏿'
+        case 'medium-dark':
+            return'✍🏾'
+        case 'medium':
+            return'✍🏽'
+        case 'medium-light':
+            return'✍🏼'
+        case 'light':
+            return'✍🏻'
+        default:
+            return'✍️'
+    }
+}
+
+function nail_polish(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💅🏿'
+        case 'medium-dark':
+            return'💅🏾'
+        case 'medium':
+            return'💅🏽'
+        case 'medium-light':
+            return'💅🏼'
+        case 'light':
+            return'💅🏻'
+        default:
+            return'💅'
+    }
+}
+
+function selfie(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤳🏿'
+        case 'medium-dark':
+            return'🤳🏾'
+        case 'medium':
+            return'🤳🏽'
+        case 'medium-light':
+            return'🤳🏼'
+        case 'light':
+            return'🤳🏻'
+        default:
+            return'🤳'
+    }
+}
+
+function flexed_biceps(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💪🏿'
+        case 'medium-dark':
+            return'💪🏾'
+        case 'medium':
+            return'💪🏽'
+        case 'medium-light':
+            return'💪🏼'
+        case 'light':
+            return'💪🏻'
+        default:
+            return'💪'
+    }
+}
+
+function leg(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦵🏿'
+        case 'medium-dark':
+            return'🦵🏾'
+        case 'medium':
+            return'🦵🏽'
+        case 'medium-light':
+            return'🦵🏼'
+        case 'light':
+            return'🦵🏻'
+        default:
+            return'🦵'
+    }
+}
+
+function foot(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦶🏿'
+        case 'medium-dark':
+            return'🦶🏾'
+        case 'medium':
+            return'🦶🏽'
+        case 'medium-light':
+            return'🦶🏼'
+        case 'light':
+            return'🦶🏻'
+        default:
+            return'🦶'
+    }
+}
+
+function ear(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👂🏿'
+        case 'medium-dark':
+            return'👂🏾'
+        case 'medium':
+            return'👂🏽'
+        case 'medium-light':
+            return'👂🏼'
+        case 'light':
+            return'👂🏻'
+        default:
+            return'👂'
+    }
+}
+
+function ear_with_hearing_aid(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦻🏿'
+        case 'medium-dark':
+            return'🦻🏾'
+        case 'medium':
+            return'🦻🏽'
+        case 'medium-light':
+            return'🦻🏼'
+        case 'light':
+            return'🦻🏻'
+        default:
+            return'🦻'
+    }
+}
+
+function nose(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👃🏿'
+        case 'medium-dark':
+            return'👃🏾'
+        case 'medium':
+            return'👃🏽'
+        case 'medium-light':
+            return'👃🏼'
+        case 'light':
+            return'👃🏻'
+        default:
+            return'👃'
+    }
+}
+
+function baby(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👶🏿'
+        case 'medium-dark':
+            return'👶🏾'
+        case 'medium':
+            return'👶🏽'
+        case 'medium-light':
+            return'👶🏼'
+        case 'light':
+            return'👶🏻'
+        default:
+            return'👶'
+    }
+}
+
+function child(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧒🏿'
+        case 'medium-dark':
+            return'🧒🏾'
+        case 'medium':
+            return'🧒🏽'
+        case 'medium-light':
+            return'🧒🏼'
+        case 'light':
+            return'🧒🏻'
+        default:
+            return'🧒'
+    }
+}
+
+function boy(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👦🏿'
+        case 'medium-dark':
+            return'👦🏾'
+        case 'medium':
+            return'👦🏽'
+        case 'medium-light':
+            return'👦🏼'
+        case 'light':
+            return'👦🏻'
+        default:
+            return'👦'
+    }
+}
+
+function girl(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👧🏿'
+        case 'medium-dark':
+            return'👧🏾'
+        case 'medium':
+            return'👧🏽'
+        case 'medium-light':
+            return'👧🏼'
+        case 'light':
+            return'👧🏻'
+        default:
+            return'👧'
+    }
+}
+
+function person(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🦲'
+        case 'medium-dark':
+            return'🧑🏾‍🦲'
+        case 'medium':
+            return'🧑🏽‍🦲'
+        case 'medium-light':
+            return'🧑🏼‍🦲'
+        case 'light':
+            return'🧑🏻‍🦲'
+        default:
+            return'🧑'
+    }
+}
+
+function man(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👱🏿‍♂️'
+        case 'medium-dark':
+            return'👱🏾‍♂️'
+        case 'medium':
+            return'👱🏽‍♂️'
+        case 'medium-light':
+            return'👱🏼‍♂️'
+        case 'light':
+            return'👱🏻‍♂️'
+        default:
+            return'👨'
+    }
+}
+
+function woman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👱🏿‍♀️'
+        case 'medium-dark':
+            return'👱🏾‍♀️'
+        case 'medium':
+            return'👱🏽‍♀️'
+        case 'medium-light':
+            return'👱🏼‍♀️'
+        case 'light':
+            return'👱🏻‍♀️'
+        default:
+            return'👩'
+    }
+}
+
+function older_person(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧓🏿'
+        case 'medium-dark':
+            return'🧓🏾'
+        case 'medium':
+            return'🧓🏽'
+        case 'medium-light':
+            return'🧓🏼'
+        case 'light':
+            return'🧓🏻'
+        default:
+            return'🧓'
+    }
+}
+
+function old_man(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👴🏿'
+        case 'medium-dark':
+            return'👴🏾'
+        case 'medium':
+            return'👴🏽'
+        case 'medium-light':
+            return'👴🏼'
+        case 'light':
+            return'👴🏻'
+        default:
+            return'👴'
+    }
+}
+
+function old_woman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👵🏿'
+        case 'medium-dark':
+            return'👵🏾'
+        case 'medium':
+            return'👵🏽'
+        case 'medium-light':
+            return'👵🏼'
+        case 'light':
+            return'👵🏻'
+        default:
+            return'👵'
+    }
+}
+
+function personfrowning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙍🏿'
+        case 'medium-dark':
+            return'🙍🏾'
+        case 'medium':
+            return'🙍🏽'
+        case 'medium-light':
+            return'🙍🏼'
+        case 'light':
+            return'🙍🏻'
+        default:
+            return'🙍'
+    }
+}
+
+function manfrowning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙍🏿‍♂️'
+        case 'medium-dark':
+            return'🙍🏾‍♂️'
+        case 'medium':
+            return'🙍🏽‍♂️'
+        case 'medium-light':
+            return'🙍🏼‍♂️'
+        case 'light':
+            return'🙍🏻‍♂️'
+        default:
+            return'🙍‍♂️'
+    }
+}
+
+function womanfrowning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙍🏿‍♀️'
+        case 'medium-dark':
+            return'🙍🏾‍♀️'
+        case 'medium':
+            return'🙍🏽‍♀️'
+        case 'medium-light':
+            return'🙍🏼‍♀️'
+        case 'light':
+            return'🙍🏻‍♀️'
+        default:
+            return'🙍‍♀️'
+    }
+}
+
+function personpouting(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙎🏿'
+        case 'medium-dark':
+            return'🙎🏾'
+        case 'medium':
+            return'🙎🏽'
+        case 'medium-light':
+            return'🙎🏼'
+        case 'light':
+            return'🙎🏻'
+        default:
+            return'🙎'
+    }
+}
+
+function manpouting(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙎🏿‍♂️'
+        case 'medium-dark':
+            return'🙎🏾‍♂️'
+        case 'medium':
+            return'🙎🏽‍♂️'
+        case 'medium-light':
+            return'🙎🏼‍♂️'
+        case 'light':
+            return'🙎🏻‍♂️'
+        default:
+            return'🙎‍♂️'
+    }
+}
+
+function womanpouting(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙎🏿‍♀️'
+        case 'medium-dark':
+            return'🙎🏾‍♀️'
+        case 'medium':
+            return'🙎🏽‍♀️'
+        case 'medium-light':
+            return'🙎🏼‍♀️'
+        case 'light':
+            return'🙎🏻‍♀️'
+        default:
+            return'🙎‍♀️'
+    }
+}
+
+function persongesturing_no(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙅🏿'
+        case 'medium-dark':
+            return'🙅🏾'
+        case 'medium':
+            return'🙅🏽'
+        case 'medium-light':
+            return'🙅🏼'
+        case 'light':
+            return'🙅🏻'
+        default:
+            return'🙅'
+    }
+}
+
+function mangesturing_no(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙅🏿‍♂️'
+        case 'medium-dark':
+            return'🙅🏾‍♂️'
+        case 'medium':
+            return'🙅🏽‍♂️'
+        case 'medium-light':
+            return'🙅🏼‍♂️'
+        case 'light':
+            return'🙅🏻‍♂️'
+        default:
+            return'🙅‍♂️'
+    }
+}
+
+function womangesturing_no(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙅🏿‍♀️'
+        case 'medium-dark':
+            return'🙅🏾‍♀️'
+        case 'medium':
+            return'🙅🏽‍♀️'
+        case 'medium-light':
+            return'🙅🏼‍♀️'
+        case 'light':
+            return'🙅🏻‍♀️'
+        default:
+            return'🙅‍♀️'
+    }
+}
+
+function persongesturing_ok(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙆🏿'
+        case 'medium-dark':
+            return'🙆🏾'
+        case 'medium':
+            return'🙆🏽'
+        case 'medium-light':
+            return'🙆🏼'
+        case 'light':
+            return'🙆🏻'
+        default:
+            return'🙆'
+    }
+}
+
+function mangesturing_ok(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙆🏿‍♂️'
+        case 'medium-dark':
+            return'🙆🏾‍♂️'
+        case 'medium':
+            return'🙆🏽‍♂️'
+        case 'medium-light':
+            return'🙆🏼‍♂️'
+        case 'light':
+            return'🙆🏻‍♂️'
+        default:
+            return'🙆‍♂️'
+    }
+}
+
+function womangesturing_ok(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙆🏿‍♀️'
+        case 'medium-dark':
+            return'🙆🏾‍♀️'
+        case 'medium':
+            return'🙆🏽‍♀️'
+        case 'medium-light':
+            return'🙆🏼‍♀️'
+        case 'light':
+            return'🙆🏻‍♀️'
+        default:
+            return'🙆‍♀️'
+    }
+}
+
+function persontipping_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💁🏿'
+        case 'medium-dark':
+            return'💁🏾'
+        case 'medium':
+            return'💁🏽'
+        case 'medium-light':
+            return'💁🏼'
+        case 'light':
+            return'💁🏻'
+        default:
+            return'💁'
+    }
+}
+
+function mantipping_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💁🏿‍♂️'
+        case 'medium-dark':
+            return'💁🏾‍♂️'
+        case 'medium':
+            return'💁🏽‍♂️'
+        case 'medium-light':
+            return'💁🏼‍♂️'
+        case 'light':
+            return'💁🏻‍♂️'
+        default:
+            return'💁‍♂️'
+    }
+}
+
+function womantipping_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💁🏿‍♀️'
+        case 'medium-dark':
+            return'💁🏾‍♀️'
+        case 'medium':
+            return'💁🏽‍♀️'
+        case 'medium-light':
+            return'💁🏼‍♀️'
+        case 'light':
+            return'💁🏻‍♀️'
+        default:
+            return'💁‍♀️'
+    }
+}
+
+function personraising_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙋🏿'
+        case 'medium-dark':
+            return'🙋🏾'
+        case 'medium':
+            return'🙋🏽'
+        case 'medium-light':
+            return'🙋🏼'
+        case 'light':
+            return'🙋🏻'
+        default:
+            return'🙋'
+    }
+}
+
+function manraising_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙋🏿‍♂️'
+        case 'medium-dark':
+            return'🙋🏾‍♂️'
+        case 'medium':
+            return'🙋🏽‍♂️'
+        case 'medium-light':
+            return'🙋🏼‍♂️'
+        case 'light':
+            return'🙋🏻‍♂️'
+        default:
+            return'🙋‍♂️'
+    }
+}
+
+function womanraising_hand(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙋🏿‍♀️'
+        case 'medium-dark':
+            return'🙋🏾‍♀️'
+        case 'medium':
+            return'🙋🏽‍♀️'
+        case 'medium-light':
+            return'🙋🏼‍♀️'
+        case 'light':
+            return'🙋🏻‍♀️'
+        default:
+            return'🙋‍♀️'
+    }
+}
+
+function deaf_person(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧏🏿'
+        case 'medium-dark':
+            return'🧏🏾'
+        case 'medium':
+            return'🧏🏽'
+        case 'medium-light':
+            return'🧏🏼'
+        case 'light':
+            return'🧏🏻'
+        default:
+            return'🧏'
+    }
+}
+
+function deaf_man(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧏🏿‍♂️'
+        case 'medium-dark':
+            return'🧏🏾‍♂️'
+        case 'medium':
+            return'🧏🏽‍♂️'
+        case 'medium-light':
+            return'🧏🏼‍♂️'
+        case 'light':
+            return'🧏🏻‍♂️'
+        default:
+            return'🧏‍♂️'
+    }
+}
+
+function deaf_woman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧏🏿‍♀️'
+        case 'medium-dark':
+            return'🧏🏾‍♀️'
+        case 'medium':
+            return'🧏🏽‍♀️'
+        case 'medium-light':
+            return'🧏🏼‍♀️'
+        case 'light':
+            return'🧏🏻‍♀️'
+        default:
+            return'🧏‍♀️'
+    }
+}
+
+function personbowing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙇🏿'
+        case 'medium-dark':
+            return'🙇🏾'
+        case 'medium':
+            return'🙇🏽'
+        case 'medium-light':
+            return'🙇🏼'
+        case 'light':
+            return'🙇🏻'
+        default:
+            return'🙇'
+    }
+}
+
+function manbowing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙇🏿‍♂️'
+        case 'medium-dark':
+            return'🙇🏾‍♂️'
+        case 'medium':
+            return'🙇🏽‍♂️'
+        case 'medium-light':
+            return'🙇🏼‍♂️'
+        case 'light':
+            return'🙇🏻‍♂️'
+        default:
+            return'🙇‍♂️'
+    }
+}
+
+function womanbowing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🙇🏿‍♀️'
+        case 'medium-dark':
+            return'🙇🏾‍♀️'
+        case 'medium':
+            return'🙇🏽‍♀️'
+        case 'medium-light':
+            return'🙇🏼‍♀️'
+        case 'light':
+            return'🙇🏻‍♀️'
+        default:
+            return'🙇‍♀️'
+    }
+}
+
+function personfacepalming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤦🏿'
+        case 'medium-dark':
+            return'🤦🏾'
+        case 'medium':
+            return'🤦🏽'
+        case 'medium-light':
+            return'🤦🏼'
+        case 'light':
+            return'🤦🏻'
+        default:
+            return'🤦'
+    }
+}
+
+function manfacepalming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤦🏿‍♂️'
+        case 'medium-dark':
+            return'🤦🏾‍♂️'
+        case 'medium':
+            return'🤦🏽‍♂️'
+        case 'medium-light':
+            return'🤦🏼‍♂️'
+        case 'light':
+            return'🤦🏻‍♂️'
+        default:
+            return'🤦‍♂️'
+    }
+}
+
+function womanfacepalming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤦🏿‍♀️'
+        case 'medium-dark':
+            return'🤦🏾‍♀️'
+        case 'medium':
+            return'🤦🏽‍♀️'
+        case 'medium-light':
+            return'🤦🏼‍♀️'
+        case 'light':
+            return'🤦🏻‍♀️'
+        default:
+            return'🤦‍♀️'
+    }
+}
+
+function personshrugging(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤷🏿'
+        case 'medium-dark':
+            return'🤷🏾'
+        case 'medium':
+            return'🤷🏽'
+        case 'medium-light':
+            return'🤷🏼'
+        case 'light':
+            return'🤷🏻'
+        default:
+            return'🤷'
+    }
+}
+
+function manshrugging(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤷🏿‍♂️'
+        case 'medium-dark':
+            return'🤷🏾‍♂️'
+        case 'medium':
+            return'🤷🏽‍♂️'
+        case 'medium-light':
+            return'🤷🏼‍♂️'
+        case 'light':
+            return'🤷🏻‍♂️'
+        default:
+            return'🤷‍♂️'
+    }
+}
+
+function womanshrugging(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤷🏿‍♀️'
+        case 'medium-dark':
+            return'🤷🏾‍♀️'
+        case 'medium':
+            return'🤷🏽‍♀️'
+        case 'medium-light':
+            return'🤷🏼‍♀️'
+        case 'light':
+            return'🤷🏻‍♀️'
+        default:
+            return'🤷‍♀️'
+    }
+}
+
+function health_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍⚕️'
+        case 'medium-dark':
+            return'🧑🏾‍⚕️'
+        case 'medium':
+            return'🧑🏽‍⚕️'
+        case 'medium-light':
+            return'🧑🏼‍⚕️'
+        case 'light':
+            return'🧑🏻‍⚕️'
+        default:
+            return'🧑‍⚕️'
+    }
+}
+
+function manhealth_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍⚕️'
+        case 'medium-dark':
+            return'👨🏾‍⚕️'
+        case 'medium':
+            return'👨🏽‍⚕️'
+        case 'medium-light':
+            return'👨🏼‍⚕️'
+        case 'light':
+            return'👨🏻‍⚕️'
+        default:
+            return'👨‍⚕️'
+    }
+}
+
+function womanhealth_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍⚕️'
+        case 'medium-dark':
+            return'👩🏾‍⚕️'
+        case 'medium':
+            return'👩🏽‍⚕️'
+        case 'medium-light':
+            return'👩🏼‍⚕️'
+        case 'light':
+            return'👩🏻‍⚕️'
+        default:
+            return'👩‍⚕️'
+    }
+}
+
+function student(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🎓'
+        case 'medium-dark':
+            return'🧑🏾‍🎓'
+        case 'medium':
+            return'🧑🏽‍🎓'
+        case 'medium-light':
+            return'🧑🏼‍🎓'
+        case 'light':
+            return'🧑🏻‍🎓'
+        default:
+            return'🧑‍🎓'
+    }
+}
+
+function manstudent(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🎓'
+        case 'medium-dark':
+            return'👨🏾‍🎓'
+        case 'medium':
+            return'👨🏽‍🎓'
+        case 'medium-light':
+            return'👨🏼‍🎓'
+        case 'light':
+            return'👨🏻‍🎓'
+        default:
+            return'👨‍🎓'
+    }
+}
+
+function womanstudent(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🎓'
+        case 'medium-dark':
+            return'👩🏾‍🎓'
+        case 'medium':
+            return'👩🏽‍🎓'
+        case 'medium-light':
+            return'👩🏼‍🎓'
+        case 'light':
+            return'👩🏻‍🎓'
+        default:
+            return'👩‍🎓'
+    }
+}
+
+function teacher(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🏫'
+        case 'medium-dark':
+            return'🧑🏾‍🏫'
+        case 'medium':
+            return'🧑🏽‍🏫'
+        case 'medium-light':
+            return'🧑🏼‍🏫'
+        case 'light':
+            return'🧑🏻‍🏫'
+        default:
+            return'🧑‍🏫'
+    }
+}
+
+function manteacher(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🏫'
+        case 'medium-dark':
+            return'👨🏾‍🏫'
+        case 'medium':
+            return'👨🏽‍🏫'
+        case 'medium-light':
+            return'👨🏼‍🏫'
+        case 'light':
+            return'👨🏻‍🏫'
+        default:
+            return'👨‍🏫'
+    }
+}
+
+function womanteacher(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🏫'
+        case 'medium-dark':
+            return'👩🏾‍🏫'
+        case 'medium':
+            return'👩🏽‍🏫'
+        case 'medium-light':
+            return'👩🏼‍🏫'
+        case 'light':
+            return'👩🏻‍🏫'
+        default:
+            return'👩‍🏫'
+    }
+}
+
+function judge(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍⚖️'
+        case 'medium-dark':
+            return'🧑🏾‍⚖️'
+        case 'medium':
+            return'🧑🏽‍⚖️'
+        case 'medium-light':
+            return'🧑🏼‍⚖️'
+        case 'light':
+            return'🧑🏻‍⚖️'
+        default:
+            return'🧑‍⚖️'
+    }
+}
+
+function manjudge(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍⚖️'
+        case 'medium-dark':
+            return'👨🏾‍⚖️'
+        case 'medium':
+            return'👨🏽‍⚖️'
+        case 'medium-light':
+            return'👨🏼‍⚖️'
+        case 'light':
+            return'👨🏻‍⚖️'
+        default:
+            return'👨‍⚖️'
+    }
+}
+
+function womanjudge(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍⚖️'
+        case 'medium-dark':
+            return'👩🏾‍⚖️'
+        case 'medium':
+            return'👩🏽‍⚖️'
+        case 'medium-light':
+            return'👩🏼‍⚖️'
+        case 'light':
+            return'👩🏻‍⚖️'
+        default:
+            return'👩‍⚖️'
+    }
+}
+
+function farmer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🌾'
+        case 'medium-dark':
+            return'🧑🏾‍🌾'
+        case 'medium':
+            return'🧑🏽‍🌾'
+        case 'medium-light':
+            return'🧑🏼‍🌾'
+        case 'light':
+            return'🧑🏻‍🌾'
+        default:
+            return'🧑‍🌾'
+    }
+}
+
+function manfarmer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🌾'
+        case 'medium-dark':
+            return'👨🏾‍🌾'
+        case 'medium':
+            return'👨🏽‍🌾'
+        case 'medium-light':
+            return'👨🏼‍🌾'
+        case 'light':
+            return'👨🏻‍🌾'
+        default:
+            return'👨‍🌾'
+    }
+}
+
+function womanfarmer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🌾'
+        case 'medium-dark':
+            return'👩🏾‍🌾'
+        case 'medium':
+            return'👩🏽‍🌾'
+        case 'medium-light':
+            return'👩🏼‍🌾'
+        case 'light':
+            return'👩🏻‍🌾'
+        default:
+            return'👩‍🌾'
+    }
+}
+
+function cook(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🍳'
+        case 'medium-dark':
+            return'🧑🏾‍🍳'
+        case 'medium':
+            return'🧑🏽‍🍳'
+        case 'medium-light':
+            return'🧑🏼‍🍳'
+        case 'light':
+            return'🧑🏻‍🍳'
+        default:
+            return'🧑‍🍳'
+    }
+}
+
+function mancook(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🍳'
+        case 'medium-dark':
+            return'👨🏾‍🍳'
+        case 'medium':
+            return'👨🏽‍🍳'
+        case 'medium-light':
+            return'👨🏼‍🍳'
+        case 'light':
+            return'👨🏻‍🍳'
+        default:
+            return'👨‍🍳'
+    }
+}
+
+function womancook(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🍳'
+        case 'medium-dark':
+            return'👩🏾‍🍳'
+        case 'medium':
+            return'👩🏽‍🍳'
+        case 'medium-light':
+            return'👩🏼‍🍳'
+        case 'light':
+            return'👩🏻‍🍳'
+        default:
+            return'👩‍🍳'
+    }
+}
+
+function mechanic(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🔧'
+        case 'medium-dark':
+            return'🧑🏾‍🔧'
+        case 'medium':
+            return'🧑🏽‍🔧'
+        case 'medium-light':
+            return'🧑🏼‍🔧'
+        case 'light':
+            return'🧑🏻‍🔧'
+        default:
+            return'🧑‍🔧'
+    }
+}
+
+function manmechanic(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🔧'
+        case 'medium-dark':
+            return'👨🏾‍🔧'
+        case 'medium':
+            return'👨🏽‍🔧'
+        case 'medium-light':
+            return'👨🏼‍🔧'
+        case 'light':
+            return'👨🏻‍🔧'
+        default:
+            return'👨‍🔧'
+    }
+}
+
+function womanmechanic(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🔧'
+        case 'medium-dark':
+            return'👩🏾‍🔧'
+        case 'medium':
+            return'👩🏽‍🔧'
+        case 'medium-light':
+            return'👩🏼‍🔧'
+        case 'light':
+            return'👩🏻‍🔧'
+        default:
+            return'👩‍🔧'
+    }
+}
+
+function factory_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🏭'
+        case 'medium-dark':
+            return'🧑🏾‍🏭'
+        case 'medium':
+            return'🧑🏽‍🏭'
+        case 'medium-light':
+            return'🧑🏼‍🏭'
+        case 'light':
+            return'🧑🏻‍🏭'
+        default:
+            return'🧑‍🏭'
+    }
+}
+
+function manfactory_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🏭'
+        case 'medium-dark':
+            return'👨🏾‍🏭'
+        case 'medium':
+            return'👨🏽‍🏭'
+        case 'medium-light':
+            return'👨🏼‍🏭'
+        case 'light':
+            return'👨🏻‍🏭'
+        default:
+            return'👨‍🏭'
+    }
+}
+
+function womanfactory_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🏭'
+        case 'medium-dark':
+            return'👩🏾‍🏭'
+        case 'medium':
+            return'👩🏽‍🏭'
+        case 'medium-light':
+            return'👩🏼‍🏭'
+        case 'light':
+            return'👩🏻‍🏭'
+        default:
+            return'👩‍🏭'
+    }
+}
+
+function office_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍💼'
+        case 'medium-dark':
+            return'🧑🏾‍💼'
+        case 'medium':
+            return'🧑🏽‍💼'
+        case 'medium-light':
+            return'🧑🏼‍💼'
+        case 'light':
+            return'🧑🏻‍💼'
+        default:
+            return'🧑‍💼'
+    }
+}
+
+function manoffice_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍💼'
+        case 'medium-dark':
+            return'👨🏾‍💼'
+        case 'medium':
+            return'👨🏽‍💼'
+        case 'medium-light':
+            return'👨🏼‍💼'
+        case 'light':
+            return'👨🏻‍💼'
+        default:
+            return'👨‍💼'
+    }
+}
+
+function womanoffice_worker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍💼'
+        case 'medium-dark':
+            return'👩🏾‍💼'
+        case 'medium':
+            return'👩🏽‍💼'
+        case 'medium-light':
+            return'👩🏼‍💼'
+        case 'light':
+            return'👩🏻‍💼'
+        default:
+            return'👩‍💼'
+    }
+}
+
+function scientist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🔬'
+        case 'medium-dark':
+            return'🧑🏾‍🔬'
+        case 'medium':
+            return'🧑🏽‍🔬'
+        case 'medium-light':
+            return'🧑🏼‍🔬'
+        case 'light':
+            return'🧑🏻‍🔬'
+        default:
+            return'🧑‍🔬'
+    }
+}
+
+function manscientist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🔬'
+        case 'medium-dark':
+            return'👨🏾‍🔬'
+        case 'medium':
+            return'👨🏽‍🔬'
+        case 'medium-light':
+            return'👨🏼‍🔬'
+        case 'light':
+            return'👨🏻‍🔬'
+        default:
+            return'👨‍🔬'
+    }
+}
+
+function womanscientist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🔬'
+        case 'medium-dark':
+            return'👩🏾‍🔬'
+        case 'medium':
+            return'👩🏽‍🔬'
+        case 'medium-light':
+            return'👩🏼‍🔬'
+        case 'light':
+            return'👩🏻‍🔬'
+        default:
+            return'👩‍🔬'
+    }
+}
+
+function technologist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍💻'
+        case 'medium-dark':
+            return'🧑🏾‍💻'
+        case 'medium':
+            return'🧑🏽‍💻'
+        case 'medium-light':
+            return'🧑🏼‍💻'
+        case 'light':
+            return'🧑🏻‍💻'
+        default:
+            return'🧑‍💻'
+    }
+}
+
+function mantechnologist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍💻'
+        case 'medium-dark':
+            return'👨🏾‍💻'
+        case 'medium':
+            return'👨🏽‍💻'
+        case 'medium-light':
+            return'👨🏼‍💻'
+        case 'light':
+            return'👨🏻‍💻'
+        default:
+            return'👨‍💻'
+    }
+}
+
+function womantechnologist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍💻'
+        case 'medium-dark':
+            return'👩🏾‍💻'
+        case 'medium':
+            return'👩🏽‍💻'
+        case 'medium-light':
+            return'👩🏼‍💻'
+        case 'light':
+            return'👩🏻‍💻'
+        default:
+            return'👩‍💻'
+    }
+}
+
+function singer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🎤'
+        case 'medium-dark':
+            return'🧑🏾‍🎤'
+        case 'medium':
+            return'🧑🏽‍🎤'
+        case 'medium-light':
+            return'🧑🏼‍🎤'
+        case 'light':
+            return'🧑🏻‍🎤'
+        default:
+            return'🧑‍🎤'
+    }
+}
+
+function mansinger(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🎤'
+        case 'medium-dark':
+            return'👨🏾‍🎤'
+        case 'medium':
+            return'👨🏽‍🎤'
+        case 'medium-light':
+            return'👨🏼‍🎤'
+        case 'light':
+            return'👨🏻‍🎤'
+        default:
+            return'👨‍🎤'
+    }
+}
+
+function womansinger(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🎤'
+        case 'medium-dark':
+            return'👩🏾‍🎤'
+        case 'medium':
+            return'👩🏽‍🎤'
+        case 'medium-light':
+            return'👩🏼‍🎤'
+        case 'light':
+            return'👩🏻‍🎤'
+        default:
+            return'👩‍🎤'
+    }
+}
+
+function artist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🎨'
+        case 'medium-dark':
+            return'🧑🏾‍🎨'
+        case 'medium':
+            return'🧑🏽‍🎨'
+        case 'medium-light':
+            return'🧑🏼‍🎨'
+        case 'light':
+            return'🧑🏻‍🎨'
+        default:
+            return'🧑‍🎨'
+    }
+}
+
+function manartist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🎨'
+        case 'medium-dark':
+            return'👨🏾‍🎨'
+        case 'medium':
+            return'👨🏽‍🎨'
+        case 'medium-light':
+            return'👨🏼‍🎨'
+        case 'light':
+            return'👨🏻‍🎨'
+        default:
+            return'👨‍🎨'
+    }
+}
+
+function womanartist(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🎨'
+        case 'medium-dark':
+            return'👩🏾‍🎨'
+        case 'medium':
+            return'👩🏽‍🎨'
+        case 'medium-light':
+            return'👩🏼‍🎨'
+        case 'light':
+            return'👩🏻‍🎨'
+        default:
+            return'👩‍🎨'
+    }
+}
+
+function pilot(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍✈️'
+        case 'medium-dark':
+            return'🧑🏾‍✈️'
+        case 'medium':
+            return'🧑🏽‍✈️'
+        case 'medium-light':
+            return'🧑🏼‍✈️'
+        case 'light':
+            return'🧑🏻‍✈️'
+        default:
+            return'🧑‍✈️'
+    }
+}
+
+function manpilot(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍✈️'
+        case 'medium-dark':
+            return'👨🏾‍✈️'
+        case 'medium':
+            return'👨🏽‍✈️'
+        case 'medium-light':
+            return'👨🏼‍✈️'
+        case 'light':
+            return'👨🏻‍✈️'
+        default:
+            return'👨‍✈️'
+    }
+}
+
+function womanpilot(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍✈️'
+        case 'medium-dark':
+            return'👩🏾‍✈️'
+        case 'medium':
+            return'👩🏽‍✈️'
+        case 'medium-light':
+            return'👩🏼‍✈️'
+        case 'light':
+            return'👩🏻‍✈️'
+        default:
+            return'👩‍✈️'
+    }
+}
+
+function astronaut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🚀'
+        case 'medium-dark':
+            return'🧑🏾‍🚀'
+        case 'medium':
+            return'🧑🏽‍🚀'
+        case 'medium-light':
+            return'🧑🏼‍🚀'
+        case 'light':
+            return'🧑🏻‍🚀'
+        default:
+            return'🧑‍🚀'
+    }
+}
+
+function manastronaut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🚀'
+        case 'medium-dark':
+            return'👨🏾‍🚀'
+        case 'medium':
+            return'👨🏽‍🚀'
+        case 'medium-light':
+            return'👨🏼‍🚀'
+        case 'light':
+            return'👨🏻‍🚀'
+        default:
+            return'👨‍🚀'
+    }
+}
+
+function womanastronaut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🚀'
+        case 'medium-dark':
+            return'👩🏾‍🚀'
+        case 'medium':
+            return'👩🏽‍🚀'
+        case 'medium-light':
+            return'👩🏼‍🚀'
+        case 'light':
+            return'👩🏻‍🚀'
+        default:
+            return'👩‍🚀'
+    }
+}
+
+function firefighter(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🚒'
+        case 'medium-dark':
+            return'🧑🏾‍🚒'
+        case 'medium':
+            return'🧑🏽‍🚒'
+        case 'medium-light':
+            return'🧑🏼‍🚒'
+        case 'light':
+            return'🧑🏻‍🚒'
+        default:
+            return'🧑‍🚒'
+    }
+}
+
+function manfirefighter(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🚒'
+        case 'medium-dark':
+            return'👨🏾‍🚒'
+        case 'medium':
+            return'👨🏽‍🚒'
+        case 'medium-light':
+            return'👨🏼‍🚒'
+        case 'light':
+            return'👨🏻‍🚒'
+        default:
+            return'👨‍🚒'
+    }
+}
+
+function womanfirefighter(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🚒'
+        case 'medium-dark':
+            return'👩🏾‍🚒'
+        case 'medium':
+            return'👩🏽‍🚒'
+        case 'medium-light':
+            return'👩🏼‍🚒'
+        case 'light':
+            return'👩🏻‍🚒'
+        default:
+            return'👩‍🚒'
+    }
+}
+
+function police_officer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👮🏿'
+        case 'medium-dark':
+            return'👮🏾'
+        case 'medium':
+            return'👮🏽'
+        case 'medium-light':
+            return'👮🏼'
+        case 'light':
+            return'👮🏻'
+        default:
+            return'👮'
+    }
+}
+
+function manpolice_officer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👮🏿‍♂️'
+        case 'medium-dark':
+            return'👮🏾‍♂️'
+        case 'medium':
+            return'👮🏽‍♂️'
+        case 'medium-light':
+            return'👮🏼‍♂️'
+        case 'light':
+            return'👮🏻‍♂️'
+        default:
+            return'👮‍♂️'
+    }
+}
+
+function womanpolice_officer(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👮🏿‍♀️'
+        case 'medium-dark':
+            return'👮🏾‍♀️'
+        case 'medium':
+            return'👮🏽‍♀️'
+        case 'medium-light':
+            return'👮🏼‍♀️'
+        case 'light':
+            return'👮🏻‍♀️'
+        default:
+            return'👮‍♀️'
+    }
+}
+
+function detective(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🕵🏿'
+        case 'medium-dark':
+            return'🕵🏾'
+        case 'medium':
+            return'🕵🏽'
+        case 'medium-light':
+            return'🕵🏼'
+        case 'light':
+            return'🕵🏻'
+        default:
+            return'🕵️'
+    }
+}
+
+function mandetective(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🕵🏿‍♂️'
+        case 'medium-dark':
+            return'🕵🏾‍♂️'
+        case 'medium':
+            return'🕵🏽‍♂️'
+        case 'medium-light':
+            return'🕵🏼‍♂️'
+        case 'light':
+            return'🕵🏻‍♂️'
+        default:
+            return'🕵️‍♂️'
+    }
+}
+
+function womandetective(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🕵🏿‍♀️'
+        case 'medium-dark':
+            return'🕵🏾‍♀️'
+        case 'medium':
+            return'🕵🏽‍♀️'
+        case 'medium-light':
+            return'🕵🏼‍♀️'
+        case 'light':
+            return'🕵🏻‍♀️'
+        default:
+            return'🕵️‍♀️'
+    }
+}
+
+function guard(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💂🏿'
+        case 'medium-dark':
+            return'💂🏾'
+        case 'medium':
+            return'💂🏽'
+        case 'medium-light':
+            return'💂🏼'
+        case 'light':
+            return'💂🏻'
+        default:
+            return'💂'
+    }
+}
+
+function manguard(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💂🏿‍♂️'
+        case 'medium-dark':
+            return'💂🏾‍♂️'
+        case 'medium':
+            return'💂🏽‍♂️'
+        case 'medium-light':
+            return'💂🏼‍♂️'
+        case 'light':
+            return'💂🏻‍♂️'
+        default:
+            return'💂‍♂️'
+    }
+}
+
+function womanguard(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💂🏿‍♀️'
+        case 'medium-dark':
+            return'💂🏾‍♀️'
+        case 'medium':
+            return'💂🏽‍♀️'
+        case 'medium-light':
+            return'💂🏼‍♀️'
+        case 'light':
+            return'💂🏻‍♀️'
+        default:
+            return'💂‍♀️'
+    }
+}
+
+function ninja(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🥷🏿'
+        case 'medium-dark':
+            return'🥷🏾'
+        case 'medium':
+            return'🥷🏽'
+        case 'medium-light':
+            return'🥷🏼'
+        case 'light':
+            return'🥷🏻'
+        default:
+            return'🥷'
+    }
+}
+
+function constructionworker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👷🏿'
+        case 'medium-dark':
+            return'👷🏾'
+        case 'medium':
+            return'👷🏽'
+        case 'medium-light':
+            return'👷🏼'
+        case 'light':
+            return'👷🏻'
+        default:
+            return'👷'
+    }
+}
+
+function manconstructionworker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👷🏿‍♂️'
+        case 'medium-dark':
+            return'👷🏾‍♂️'
+        case 'medium':
+            return'👷🏽‍♂️'
+        case 'medium-light':
+            return'👷🏼‍♂️'
+        case 'light':
+            return'👷🏻‍♂️'
+        default:
+            return'👷‍♂️'
+    }
+}
+
+function womanconstructionworker(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👷🏿‍♀️'
+        case 'medium-dark':
+            return'👷🏾‍♀️'
+        case 'medium':
+            return'👷🏽‍♀️'
+        case 'medium-light':
+            return'👷🏼‍♀️'
+        case 'light':
+            return'👷🏻‍♀️'
+        default:
+            return'👷‍♀️'
+    }
+}
+
+function personwith_crown(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫅🏿'
+        case 'medium-dark':
+            return'🫅🏾'
+        case 'medium':
+            return'🫅🏽'
+        case 'medium-light':
+            return'🫅🏼'
+        case 'light':
+            return'🫅🏻'
+        default:
+            return'🫅'
+    }
+}
+
+function prince(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤴🏿'
+        case 'medium-dark':
+            return'🤴🏾'
+        case 'medium':
+            return'🤴🏽'
+        case 'medium-light':
+            return'🤴🏼'
+        case 'light':
+            return'🤴🏻'
+        default:
+            return'🤴'
+    }
+}
+
+function princess(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👸🏿'
+        case 'medium-dark':
+            return'👸🏾'
+        case 'medium':
+            return'👸🏽'
+        case 'medium-light':
+            return'👸🏼'
+        case 'light':
+            return'👸🏻'
+        default:
+            return'👸'
+    }
+}
+
+function personwearing_turban(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👳🏿'
+        case 'medium-dark':
+            return'👳🏾'
+        case 'medium':
+            return'👳🏽'
+        case 'medium-light':
+            return'👳🏼'
+        case 'light':
+            return'👳🏻'
+        default:
+            return'👳'
+    }
+}
+
+function manwearing_turban(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👳🏿‍♂️'
+        case 'medium-dark':
+            return'👳🏾‍♂️'
+        case 'medium':
+            return'👳🏽‍♂️'
+        case 'medium-light':
+            return'👳🏼‍♂️'
+        case 'light':
+            return'👳🏻‍♂️'
+        default:
+            return'👳‍♂️'
+    }
+}
+
+function womanwearing_turban(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👳🏿‍♀️'
+        case 'medium-dark':
+            return'👳🏾‍♀️'
+        case 'medium':
+            return'👳🏽‍♀️'
+        case 'medium-light':
+            return'👳🏼‍♀️'
+        case 'light':
+            return'👳🏻‍♀️'
+        default:
+            return'👳‍♀️'
+    }
+}
+
+function personwith_skullcap(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👲🏿'
+        case 'medium-dark':
+            return'👲🏾'
+        case 'medium':
+            return'👲🏽'
+        case 'medium-light':
+            return'👲🏼'
+        case 'light':
+            return'👲🏻'
+        default:
+            return'👲'
+    }
+}
+
+function womanwith_headscarf(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧕🏿'
+        case 'medium-dark':
+            return'🧕🏾'
+        case 'medium':
+            return'🧕🏽'
+        case 'medium-light':
+            return'🧕🏼'
+        case 'light':
+            return'🧕🏻'
+        default:
+            return'🧕'
+    }
+}
+
+function personintuxedo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤵🏿'
+        case 'medium-dark':
+            return'🤵🏾'
+        case 'medium':
+            return'🤵🏽'
+        case 'medium-light':
+            return'🤵🏼'
+        case 'light':
+            return'🤵🏻'
+        default:
+            return'🤵'
+    }
+}
+
+function manintuxedo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤵🏿‍♂️'
+        case 'medium-dark':
+            return'🤵🏾‍♂️'
+        case 'medium':
+            return'🤵🏽‍♂️'
+        case 'medium-light':
+            return'🤵🏼‍♂️'
+        case 'light':
+            return'🤵🏻‍♂️'
+        default:
+            return'🤵‍♂️'
+    }
+}
+
+function womanintuxedo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤵🏿‍♀️'
+        case 'medium-dark':
+            return'🤵🏾‍♀️'
+        case 'medium':
+            return'🤵🏽‍♀️'
+        case 'medium-light':
+            return'🤵🏼‍♀️'
+        case 'light':
+            return'🤵🏻‍♀️'
+        default:
+            return'🤵‍♀️'
+    }
+}
+
+function personwith_veil(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👰🏿'
+        case 'medium-dark':
+            return'👰🏾'
+        case 'medium':
+            return'👰🏽'
+        case 'medium-light':
+            return'👰🏼'
+        case 'light':
+            return'👰🏻'
+        default:
+            return'👰'
+    }
+}
+
+function manwith_veil(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👰🏿‍♂️'
+        case 'medium-dark':
+            return'👰🏾‍♂️'
+        case 'medium':
+            return'👰🏽‍♂️'
+        case 'medium-light':
+            return'👰🏼‍♂️'
+        case 'light':
+            return'👰🏻‍♂️'
+        default:
+            return'👰‍♂️'
+    }
+}
+
+function womanwith_veil(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👰🏿‍♀️'
+        case 'medium-dark':
+            return'👰🏾‍♀️'
+        case 'medium':
+            return'👰🏽‍♀️'
+        case 'medium-light':
+            return'👰🏼‍♀️'
+        case 'light':
+            return'👰🏻‍♀️'
+        default:
+            return'👰‍♀️'
+    }
+}
+
+function pregnant_woman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤰🏿'
+        case 'medium-dark':
+            return'🤰🏾'
+        case 'medium':
+            return'🤰🏽'
+        case 'medium-light':
+            return'🤰🏼'
+        case 'light':
+            return'🤰🏻'
+        default:
+            return'🤰'
+    }
+}
+
+function pregnant_man(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫃🏿'
+        case 'medium-dark':
+            return'🫃🏾'
+        case 'medium':
+            return'🫃🏽'
+        case 'medium-light':
+            return'🫃🏼'
+        case 'light':
+            return'🫃🏻'
+        default:
+            return'🫃'
+    }
+}
+
+function pregnant_person(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🫄🏿'
+        case 'medium-dark':
+            return'🫄🏾'
+        case 'medium':
+            return'🫄🏽'
+        case 'medium-light':
+            return'🫄🏼'
+        case 'light':
+            return'🫄🏻'
+        default:
+            return'🫄'
+    }
+}
+
+function breastfeeding(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤱🏿'
+        case 'medium-dark':
+            return'🤱🏾'
+        case 'medium':
+            return'🤱🏽'
+        case 'medium-light':
+            return'🤱🏼'
+        case 'light':
+            return'🤱🏻'
+        default:
+            return'🤱'
+    }
+}
+
+function womanfeeding_baby(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🍼'
+        case 'medium-dark':
+            return'👩🏾‍🍼'
+        case 'medium':
+            return'👩🏽‍🍼'
+        case 'medium-light':
+            return'👩🏼‍🍼'
+        case 'light':
+            return'👩🏻‍🍼'
+        default:
+            return'👩‍🍼'
+    }
+}
+
+function manfeeding_baby(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🍼'
+        case 'medium-dark':
+            return'👨🏾‍🍼'
+        case 'medium':
+            return'👨🏽‍🍼'
+        case 'medium-light':
+            return'👨🏼‍🍼'
+        case 'light':
+            return'👨🏻‍🍼'
+        default:
+            return'👨‍🍼'
+    }
+}
+
+function personfeeding_baby(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🍼'
+        case 'medium-dark':
+            return'🧑🏾‍🍼'
+        case 'medium':
+            return'🧑🏽‍🍼'
+        case 'medium-light':
+            return'🧑🏼‍🍼'
+        case 'light':
+            return'🧑🏻‍🍼'
+        default:
+            return'🧑‍🍼'
+    }
+}
+
+function baby_angel(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👼🏿'
+        case 'medium-dark':
+            return'👼🏾'
+        case 'medium':
+            return'👼🏽'
+        case 'medium-light':
+            return'👼🏼'
+        case 'light':
+            return'👼🏻'
+        default:
+            return'👼'
+    }
+}
+
+function santa_claus(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🎅🏿'
+        case 'medium-dark':
+            return'🎅🏾'
+        case 'medium':
+            return'🎅🏽'
+        case 'medium-light':
+            return'🎅🏼'
+        case 'light':
+            return'🎅🏻'
+        default:
+            return'🎅'
+    }
+}
+
+function mrs_claus(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤶🏿'
+        case 'medium-dark':
+            return'🤶🏾'
+        case 'medium':
+            return'🤶🏽'
+        case 'medium-light':
+            return'🤶🏼'
+        case 'light':
+            return'🤶🏻'
+        default:
+            return'🤶'
+    }
+}
+
+function mx_claus(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🎄'
+        case 'medium-dark':
+            return'🧑🏾‍🎄'
+        case 'medium':
+            return'🧑🏽‍🎄'
+        case 'medium-light':
+            return'🧑🏼‍🎄'
+        case 'light':
+            return'🧑🏻‍🎄'
+        default:
+            return'🧑‍🎄'
+    }
+}
+
+function superhero(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦸🏿'
+        case 'medium-dark':
+            return'🦸🏾'
+        case 'medium':
+            return'🦸🏽'
+        case 'medium-light':
+            return'🦸🏼'
+        case 'light':
+            return'🦸🏻'
+        default:
+            return'🦸'
+    }
+}
+
+function mansuperhero(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦸🏿‍♂️'
+        case 'medium-dark':
+            return'🦸🏾‍♂️'
+        case 'medium':
+            return'🦸🏽‍♂️'
+        case 'medium-light':
+            return'🦸🏼‍♂️'
+        case 'light':
+            return'🦸🏻‍♂️'
+        default:
+            return'🦸‍♂️'
+    }
+}
+
+function womansuperhero(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦸🏿‍♀️'
+        case 'medium-dark':
+            return'🦸🏾‍♀️'
+        case 'medium':
+            return'🦸🏽‍♀️'
+        case 'medium-light':
+            return'🦸🏼‍♀️'
+        case 'light':
+            return'🦸🏻‍♀️'
+        default:
+            return'🦸‍♀️'
+    }
+}
+
+function supervillain(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦹🏿'
+        case 'medium-dark':
+            return'🦹🏾'
+        case 'medium':
+            return'🦹🏽'
+        case 'medium-light':
+            return'🦹🏼'
+        case 'light':
+            return'🦹🏻'
+        default:
+            return'🦹'
+    }
+}
+
+function mansupervillain(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦹🏿‍♂️'
+        case 'medium-dark':
+            return'🦹🏾‍♂️'
+        case 'medium':
+            return'🦹🏽‍♂️'
+        case 'medium-light':
+            return'🦹🏼‍♂️'
+        case 'light':
+            return'🦹🏻‍♂️'
+        default:
+            return'🦹‍♂️'
+    }
+}
+
+function womansupervillain(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🦹🏿‍♀️'
+        case 'medium-dark':
+            return'🦹🏾‍♀️'
+        case 'medium':
+            return'🦹🏽‍♀️'
+        case 'medium-light':
+            return'🦹🏼‍♀️'
+        case 'light':
+            return'🦹🏻‍♀️'
+        default:
+            return'🦹‍♀️'
+    }
+}
+
+function mage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧙🏿'
+        case 'medium-dark':
+            return'🧙🏾'
+        case 'medium':
+            return'🧙🏽'
+        case 'medium-light':
+            return'🧙🏼'
+        case 'light':
+            return'🧙🏻'
+        default:
+            return'🧙'
+    }
+}
+
+function manmage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧙🏿‍♂️'
+        case 'medium-dark':
+            return'🧙🏾‍♂️'
+        case 'medium':
+            return'🧙🏽‍♂️'
+        case 'medium-light':
+            return'🧙🏼‍♂️'
+        case 'light':
+            return'🧙🏻‍♂️'
+        default:
+            return'🧙‍♂️'
+    }
+}
+
+function womanmage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧙🏿‍♀️'
+        case 'medium-dark':
+            return'🧙🏾‍♀️'
+        case 'medium':
+            return'🧙🏽‍♀️'
+        case 'medium-light':
+            return'🧙🏼‍♀️'
+        case 'light':
+            return'🧙🏻‍♀️'
+        default:
+            return'🧙‍♀️'
+    }
+}
+
+function fairy(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧚🏿'
+        case 'medium-dark':
+            return'🧚🏾'
+        case 'medium':
+            return'🧚🏽'
+        case 'medium-light':
+            return'🧚🏼'
+        case 'light':
+            return'🧚🏻'
+        default:
+            return'🧚'
+    }
+}
+
+function manfairy(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧚🏿‍♂️'
+        case 'medium-dark':
+            return'🧚🏾‍♂️'
+        case 'medium':
+            return'🧚🏽‍♂️'
+        case 'medium-light':
+            return'🧚🏼‍♂️'
+        case 'light':
+            return'🧚🏻‍♂️'
+        default:
+            return'🧚‍♂️'
+    }
+}
+
+function womanfairy(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧚🏿‍♀️'
+        case 'medium-dark':
+            return'🧚🏾‍♀️'
+        case 'medium':
+            return'🧚🏽‍♀️'
+        case 'medium-light':
+            return'🧚🏼‍♀️'
+        case 'light':
+            return'🧚🏻‍♀️'
+        default:
+            return'🧚‍♀️'
+    }
+}
+
+function vampire(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧛🏿'
+        case 'medium-dark':
+            return'🧛🏾'
+        case 'medium':
+            return'🧛🏽'
+        case 'medium-light':
+            return'🧛🏼'
+        case 'light':
+            return'🧛🏻'
+        default:
+            return'🧛'
+    }
+}
+
+function manvampire(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧛🏿‍♂️'
+        case 'medium-dark':
+            return'🧛🏾‍♂️'
+        case 'medium':
+            return'🧛🏽‍♂️'
+        case 'medium-light':
+            return'🧛🏼‍♂️'
+        case 'light':
+            return'🧛🏻‍♂️'
+        default:
+            return'🧛‍♂️'
+    }
+}
+
+function womanvampire(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧛🏿‍♀️'
+        case 'medium-dark':
+            return'🧛🏾‍♀️'
+        case 'medium':
+            return'🧛🏽‍♀️'
+        case 'medium-light':
+            return'🧛🏼‍♀️'
+        case 'light':
+            return'🧛🏻‍♀️'
+        default:
+            return'🧛‍♀️'
+    }
+}
+
+function merperson(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧜🏿'
+        case 'medium-dark':
+            return'🧜🏾'
+        case 'medium':
+            return'🧜🏽'
+        case 'medium-light':
+            return'🧜🏼'
+        case 'light':
+            return'🧜🏻'
+        default:
+            return'🧜'
+    }
+}
+
+function merman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧜🏿‍♂️'
+        case 'medium-dark':
+            return'🧜🏾‍♂️'
+        case 'medium':
+            return'🧜🏽‍♂️'
+        case 'medium-light':
+            return'🧜🏼‍♂️'
+        case 'light':
+            return'🧜🏻‍♂️'
+        default:
+            return'🧜‍♂️'
+    }
+}
+
+function mermaid(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧜🏿‍♀️'
+        case 'medium-dark':
+            return'🧜🏾‍♀️'
+        case 'medium':
+            return'🧜🏽‍♀️'
+        case 'medium-light':
+            return'🧜🏼‍♀️'
+        case 'light':
+            return'🧜🏻‍♀️'
+        default:
+            return'🧜‍♀️'
+    }
+}
+
+function elf(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧝🏿'
+        case 'medium-dark':
+            return'🧝🏾'
+        case 'medium':
+            return'🧝🏽'
+        case 'medium-light':
+            return'🧝🏼'
+        case 'light':
+            return'🧝🏻'
+        default:
+            return'🧝'
+    }
+}
+
+function manelf(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧝🏿‍♂️'
+        case 'medium-dark':
+            return'🧝🏾‍♂️'
+        case 'medium':
+            return'🧝🏽‍♂️'
+        case 'medium-light':
+            return'🧝🏼‍♂️'
+        case 'light':
+            return'🧝🏻‍♂️'
+        default:
+            return'🧝‍♂️'
+    }
+}
+
+function womanelf(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧝🏿‍♀️'
+        case 'medium-dark':
+            return'🧝🏾‍♀️'
+        case 'medium':
+            return'🧝🏽‍♀️'
+        case 'medium-light':
+            return'🧝🏼‍♀️'
+        case 'light':
+            return'🧝🏻‍♀️'
+        default:
+            return'🧝‍♀️'
+    }
+}
+
+function persongetting_massage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💆🏿'
+        case 'medium-dark':
+            return'💆🏾'
+        case 'medium':
+            return'💆🏽'
+        case 'medium-light':
+            return'💆🏼'
+        case 'light':
+            return'💆🏻'
+        default:
+            return'💆'
+    }
+}
+
+function mangetting_massage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💆🏿‍♂️'
+        case 'medium-dark':
+            return'💆🏾‍♂️'
+        case 'medium':
+            return'💆🏽‍♂️'
+        case 'medium-light':
+            return'💆🏼‍♂️'
+        case 'light':
+            return'💆🏻‍♂️'
+        default:
+            return'💆‍♂️'
+    }
+}
+
+function womangetting_massage(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💆🏿‍♀️'
+        case 'medium-dark':
+            return'💆🏾‍♀️'
+        case 'medium':
+            return'💆🏽‍♀️'
+        case 'medium-light':
+            return'💆🏼‍♀️'
+        case 'light':
+            return'💆🏻‍♀️'
+        default:
+            return'💆‍♀️'
+    }
+}
+
+function persongetting_haircut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💇🏿'
+        case 'medium-dark':
+            return'💇🏾'
+        case 'medium':
+            return'💇🏽'
+        case 'medium-light':
+            return'💇🏼'
+        case 'light':
+            return'💇🏻'
+        default:
+            return'💇'
+    }
+}
+
+function mangetting_haircut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💇🏿‍♂️'
+        case 'medium-dark':
+            return'💇🏾‍♂️'
+        case 'medium':
+            return'💇🏽‍♂️'
+        case 'medium-light':
+            return'💇🏼‍♂️'
+        case 'light':
+            return'💇🏻‍♂️'
+        default:
+            return'💇‍♂️'
+    }
+}
+
+function womangetting_haircut(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💇🏿‍♀️'
+        case 'medium-dark':
+            return'💇🏾‍♀️'
+        case 'medium':
+            return'💇🏽‍♀️'
+        case 'medium-light':
+            return'💇🏼‍♀️'
+        case 'light':
+            return'💇🏻‍♀️'
+        default:
+            return'💇‍♀️'
+    }
+}
+
+function personwalking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚶🏿'
+        case 'medium-dark':
+            return'🚶🏾'
+        case 'medium':
+            return'🚶🏽'
+        case 'medium-light':
+            return'🚶🏼'
+        case 'light':
+            return'🚶🏻'
+        default:
+            return'🚶'
+    }
+}
+
+function manwalking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚶🏿‍♂️'
+        case 'medium-dark':
+            return'🚶🏾‍♂️'
+        case 'medium':
+            return'🚶🏽‍♂️'
+        case 'medium-light':
+            return'🚶🏼‍♂️'
+        case 'light':
+            return'🚶🏻‍♂️'
+        default:
+            return'🚶‍♂️'
+    }
+}
+
+function womanwalking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚶🏿‍♀️'
+        case 'medium-dark':
+            return'🚶🏾‍♀️'
+        case 'medium':
+            return'🚶🏽‍♀️'
+        case 'medium-light':
+            return'🚶🏼‍♀️'
+        case 'light':
+            return'🚶🏻‍♀️'
+        default:
+            return'🚶‍♀️'
+    }
+}
+
+function personstanding(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧍🏿'
+        case 'medium-dark':
+            return'🧍🏾'
+        case 'medium':
+            return'🧍🏽'
+        case 'medium-light':
+            return'🧍🏼'
+        case 'light':
+            return'🧍🏻'
+        default:
+            return'🧍'
+    }
+}
+
+function manstanding(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧍🏿‍♂️'
+        case 'medium-dark':
+            return'🧍🏾‍♂️'
+        case 'medium':
+            return'🧍🏽‍♂️'
+        case 'medium-light':
+            return'🧍🏼‍♂️'
+        case 'light':
+            return'🧍🏻‍♂️'
+        default:
+            return'🧍‍♂️'
+    }
+}
+
+function womanstanding(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧍🏿‍♀️'
+        case 'medium-dark':
+            return'🧍🏾‍♀️'
+        case 'medium':
+            return'🧍🏽‍♀️'
+        case 'medium-light':
+            return'🧍🏼‍♀️'
+        case 'light':
+            return'🧍🏻‍♀️'
+        default:
+            return'🧍‍♀️'
+    }
+}
+
+function personkneeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧎🏿'
+        case 'medium-dark':
+            return'🧎🏾'
+        case 'medium':
+            return'🧎🏽'
+        case 'medium-light':
+            return'🧎🏼'
+        case 'light':
+            return'🧎🏻'
+        default:
+            return'🧎'
+    }
+}
+
+function mankneeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧎🏿‍♂️'
+        case 'medium-dark':
+            return'🧎🏾‍♂️'
+        case 'medium':
+            return'🧎🏽‍♂️'
+        case 'medium-light':
+            return'🧎🏼‍♂️'
+        case 'light':
+            return'🧎🏻‍♂️'
+        default:
+            return'🧎‍♂️'
+    }
+}
+
+function womankneeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧎🏿‍♀️'
+        case 'medium-dark':
+            return'🧎🏾‍♀️'
+        case 'medium':
+            return'🧎🏽‍♀️'
+        case 'medium-light':
+            return'🧎🏼‍♀️'
+        case 'light':
+            return'🧎🏻‍♀️'
+        default:
+            return'🧎‍♀️'
+    }
+}
+
+function personwith_white_cane(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🦯'
+        case 'medium-dark':
+            return'🧑🏾‍🦯'
+        case 'medium':
+            return'🧑🏽‍🦯'
+        case 'medium-light':
+            return'🧑🏼‍🦯'
+        case 'light':
+            return'🧑🏻‍🦯'
+        default:
+            return'🧑‍🦯'
+    }
+}
+
+function manwith_white_cane(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🦯'
+        case 'medium-dark':
+            return'👨🏾‍🦯'
+        case 'medium':
+            return'👨🏽‍🦯'
+        case 'medium-light':
+            return'👨🏼‍🦯'
+        case 'light':
+            return'👨🏻‍🦯'
+        default:
+            return'👨‍🦯'
+    }
+}
+
+function womanwith_white_cane(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🦯'
+        case 'medium-dark':
+            return'👩🏾‍🦯'
+        case 'medium':
+            return'👩🏽‍🦯'
+        case 'medium-light':
+            return'👩🏼‍🦯'
+        case 'light':
+            return'👩🏻‍🦯'
+        default:
+            return'👩‍🦯'
+    }
+}
+
+function personinmotorized_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🦼'
+        case 'medium-dark':
+            return'🧑🏾‍🦼'
+        case 'medium':
+            return'🧑🏽‍🦼'
+        case 'medium-light':
+            return'🧑🏼‍🦼'
+        case 'light':
+            return'🧑🏻‍🦼'
+        default:
+            return'🧑‍🦼'
+    }
+}
+
+function maninmotorized_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🦼'
+        case 'medium-dark':
+            return'👨🏾‍🦼'
+        case 'medium':
+            return'👨🏽‍🦼'
+        case 'medium-light':
+            return'👨🏼‍🦼'
+        case 'light':
+            return'👨🏻‍🦼'
+        default:
+            return'👨‍🦼'
+    }
+}
+
+function womaninmotorized_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🦼'
+        case 'medium-dark':
+            return'👩🏾‍🦼'
+        case 'medium':
+            return'👩🏽‍🦼'
+        case 'medium-light':
+            return'👩🏼‍🦼'
+        case 'light':
+            return'👩🏻‍🦼'
+        default:
+            return'👩‍🦼'
+    }
+}
+
+function personinmanual_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🦽'
+        case 'medium-dark':
+            return'🧑🏾‍🦽'
+        case 'medium':
+            return'🧑🏽‍🦽'
+        case 'medium-light':
+            return'🧑🏼‍🦽'
+        case 'light':
+            return'🧑🏻‍🦽'
+        default:
+            return'🧑‍🦽'
+    }
+}
+
+function maninmanual_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍🦽'
+        case 'medium-dark':
+            return'👨🏾‍🦽'
+        case 'medium':
+            return'👨🏽‍🦽'
+        case 'medium-light':
+            return'👨🏼‍🦽'
+        case 'light':
+            return'👨🏻‍🦽'
+        default:
+            return'👨‍🦽'
+    }
+}
+
+function womaninmanual_wheelchair(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍🦽'
+        case 'medium-dark':
+            return'👩🏾‍🦽'
+        case 'medium':
+            return'👩🏽‍🦽'
+        case 'medium-light':
+            return'👩🏼‍🦽'
+        case 'light':
+            return'👩🏻‍🦽'
+        default:
+            return'👩‍🦽'
+    }
+}
+
+function personrunning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏃🏿'
+        case 'medium-dark':
+            return'🏃🏾'
+        case 'medium':
+            return'🏃🏽'
+        case 'medium-light':
+            return'🏃🏼'
+        case 'light':
+            return'🏃🏻'
+        default:
+            return'🏃'
+    }
+}
+
+function manrunning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏃🏿‍♂️'
+        case 'medium-dark':
+            return'🏃🏾‍♂️'
+        case 'medium':
+            return'🏃🏽‍♂️'
+        case 'medium-light':
+            return'🏃🏼‍♂️'
+        case 'light':
+            return'🏃🏻‍♂️'
+        default:
+            return'🏃‍♂️'
+    }
+}
+
+function womanrunning(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏃🏿‍♀️'
+        case 'medium-dark':
+            return'🏃🏾‍♀️'
+        case 'medium':
+            return'🏃🏽‍♀️'
+        case 'medium-light':
+            return'🏃🏼‍♀️'
+        case 'light':
+            return'🏃🏻‍♀️'
+        default:
+            return'🏃‍♀️'
+    }
+}
+
+function womandancing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💃🏿'
+        case 'medium-dark':
+            return'💃🏾'
+        case 'medium':
+            return'💃🏽'
+        case 'medium-light':
+            return'💃🏼'
+        case 'light':
+            return'💃🏻'
+        default:
+            return'💃'
+    }
+}
+
+function mandancing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🕺🏿'
+        case 'medium-dark':
+            return'🕺🏾'
+        case 'medium':
+            return'🕺🏽'
+        case 'medium-light':
+            return'🕺🏼'
+        case 'light':
+            return'🕺🏻'
+        default:
+            return'🕺'
+    }
+}
+
+function personinsuit_levitating(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🕴🏿'
+        case 'medium-dark':
+            return'🕴🏾'
+        case 'medium':
+            return'🕴🏽'
+        case 'medium-light':
+            return'🕴🏼'
+        case 'light':
+            return'🕴🏻'
+        default:
+            return'🕴️'
+    }
+}
+
+function personinsteamy_room(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧖🏿'
+        case 'medium-dark':
+            return'🧖🏾'
+        case 'medium':
+            return'🧖🏽'
+        case 'medium-light':
+            return'🧖🏼'
+        case 'light':
+            return'🧖🏻'
+        default:
+            return'🧖'
+    }
+}
+
+function maninsteamy_room(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧖🏿‍♂️'
+        case 'medium-dark':
+            return'🧖🏾‍♂️'
+        case 'medium':
+            return'🧖🏽‍♂️'
+        case 'medium-light':
+            return'🧖🏼‍♂️'
+        case 'light':
+            return'🧖🏻‍♂️'
+        default:
+            return'🧖‍♂️'
+    }
+}
+
+function womaninsteamy_room(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧖🏿‍♀️'
+        case 'medium-dark':
+            return'🧖🏾‍♀️'
+        case 'medium':
+            return'🧖🏽‍♀️'
+        case 'medium-light':
+            return'🧖🏼‍♀️'
+        case 'light':
+            return'🧖🏻‍♀️'
+        default:
+            return'🧖‍♀️'
+    }
+}
+
+function personclimbing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧗🏿'
+        case 'medium-dark':
+            return'🧗🏾'
+        case 'medium':
+            return'🧗🏽'
+        case 'medium-light':
+            return'🧗🏼'
+        case 'light':
+            return'🧗🏻'
+        default:
+            return'🧗'
+    }
+}
+
+function manclimbing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧗🏿‍♂️'
+        case 'medium-dark':
+            return'🧗🏾‍♂️'
+        case 'medium':
+            return'🧗🏽‍♂️'
+        case 'medium-light':
+            return'🧗🏼‍♂️'
+        case 'light':
+            return'🧗🏻‍♂️'
+        default:
+            return'🧗‍♂️'
+    }
+}
+
+function womanclimbing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧗🏿‍♀️'
+        case 'medium-dark':
+            return'🧗🏾‍♀️'
+        case 'medium':
+            return'🧗🏽‍♀️'
+        case 'medium-light':
+            return'🧗🏼‍♀️'
+        case 'light':
+            return'🧗🏻‍♀️'
+        default:
+            return'🧗‍♀️'
+    }
+}
+
+function horse_racing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏇🏿'
+        case 'medium-dark':
+            return'🏇🏾'
+        case 'medium':
+            return'🏇🏽'
+        case 'medium-light':
+            return'🏇🏼'
+        case 'light':
+            return'🏇🏻'
+        default:
+            return'🏇'
+    }
+}
+
+function snowboarder(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏂🏿'
+        case 'medium-dark':
+            return'🏂🏾'
+        case 'medium':
+            return'🏂🏽'
+        case 'medium-light':
+            return'🏂🏼'
+        case 'light':
+            return'🏂🏻'
+        default:
+            return'🏂'
+    }
+}
+
+function persongolfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏌🏿'
+        case 'medium-dark':
+            return'🏌🏾'
+        case 'medium':
+            return'🏌🏽'
+        case 'medium-light':
+            return'🏌🏼'
+        case 'light':
+            return'🏌🏻'
+        default:
+            return'🏌️'
+    }
+}
+
+function mangolfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏌🏿‍♂️'
+        case 'medium-dark':
+            return'🏌🏾‍♂️'
+        case 'medium':
+            return'🏌🏽‍♂️'
+        case 'medium-light':
+            return'🏌🏼‍♂️'
+        case 'light':
+            return'🏌🏻‍♂️'
+        default:
+            return'🏌️‍♂️'
+    }
+}
+
+function womangolfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏌🏿‍♀️'
+        case 'medium-dark':
+            return'🏌🏾‍♀️'
+        case 'medium':
+            return'🏌🏽‍♀️'
+        case 'medium-light':
+            return'🏌🏼‍♀️'
+        case 'light':
+            return'🏌🏻‍♀️'
+        default:
+            return'🏌️‍♀️'
+    }
+}
+
+function personsurfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏄🏿'
+        case 'medium-dark':
+            return'🏄🏾'
+        case 'medium':
+            return'🏄🏽'
+        case 'medium-light':
+            return'🏄🏼'
+        case 'light':
+            return'🏄🏻'
+        default:
+            return'🏄'
+    }
+}
+
+function mansurfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏄🏿‍♂️'
+        case 'medium-dark':
+            return'🏄🏾‍♂️'
+        case 'medium':
+            return'🏄🏽‍♂️'
+        case 'medium-light':
+            return'🏄🏼‍♂️'
+        case 'light':
+            return'🏄🏻‍♂️'
+        default:
+            return'🏄‍♂️'
+    }
+}
+
+function womansurfing(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏄🏿‍♀️'
+        case 'medium-dark':
+            return'🏄🏾‍♀️'
+        case 'medium':
+            return'🏄🏽‍♀️'
+        case 'medium-light':
+            return'🏄🏼‍♀️'
+        case 'light':
+            return'🏄🏻‍♀️'
+        default:
+            return'🏄‍♀️'
+    }
+}
+
+function personrowing_boat(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚣🏿'
+        case 'medium-dark':
+            return'🚣🏾'
+        case 'medium':
+            return'🚣🏽'
+        case 'medium-light':
+            return'🚣🏼'
+        case 'light':
+            return'🚣🏻'
+        default:
+            return'🚣'
+    }
+}
+
+function manrowing_boat(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚣🏿‍♂️'
+        case 'medium-dark':
+            return'🚣🏾‍♂️'
+        case 'medium':
+            return'🚣🏽‍♂️'
+        case 'medium-light':
+            return'🚣🏼‍♂️'
+        case 'light':
+            return'🚣🏻‍♂️'
+        default:
+            return'🚣‍♂️'
+    }
+}
+
+function womanrowing_boat(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚣🏿‍♀️'
+        case 'medium-dark':
+            return'🚣🏾‍♀️'
+        case 'medium':
+            return'🚣🏽‍♀️'
+        case 'medium-light':
+            return'🚣🏼‍♀️'
+        case 'light':
+            return'🚣🏻‍♀️'
+        default:
+            return'🚣‍♀️'
+    }
+}
+
+function personswimming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏊🏿'
+        case 'medium-dark':
+            return'🏊🏾'
+        case 'medium':
+            return'🏊🏽'
+        case 'medium-light':
+            return'🏊🏼'
+        case 'light':
+            return'🏊🏻'
+        default:
+            return'🏊'
+    }
+}
+
+function manswimming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏊🏿‍♂️'
+        case 'medium-dark':
+            return'🏊🏾‍♂️'
+        case 'medium':
+            return'🏊🏽‍♂️'
+        case 'medium-light':
+            return'🏊🏼‍♂️'
+        case 'light':
+            return'🏊🏻‍♂️'
+        default:
+            return'🏊‍♂️'
+    }
+}
+
+function womanswimming(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏊🏿‍♀️'
+        case 'medium-dark':
+            return'🏊🏾‍♀️'
+        case 'medium':
+            return'🏊🏽‍♀️'
+        case 'medium-light':
+            return'🏊🏼‍♀️'
+        case 'light':
+            return'🏊🏻‍♀️'
+        default:
+            return'🏊‍♀️'
+    }
+}
+
+function personbouncing_ball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'⛹🏿'
+        case 'medium-dark':
+            return'⛹🏾'
+        case 'medium':
+            return'⛹🏽'
+        case 'medium-light':
+            return'⛹🏼'
+        case 'light':
+            return'⛹🏻'
+        default:
+            return'⛹️'
+    }
+}
+
+function manbouncing_ball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'⛹🏿‍♂️'
+        case 'medium-dark':
+            return'⛹🏾‍♂️'
+        case 'medium':
+            return'⛹🏽‍♂️'
+        case 'medium-light':
+            return'⛹🏼‍♂️'
+        case 'light':
+            return'⛹🏻‍♂️'
+        default:
+            return'⛹️‍♂️'
+    }
+}
+
+function womanbouncing_ball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'⛹🏿‍♀️'
+        case 'medium-dark':
+            return'⛹🏾‍♀️'
+        case 'medium':
+            return'⛹🏽‍♀️'
+        case 'medium-light':
+            return'⛹🏼‍♀️'
+        case 'light':
+            return'⛹🏻‍♀️'
+        default:
+            return'⛹️‍♀️'
+    }
+}
+
+function personlifting_weights(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏋🏿'
+        case 'medium-dark':
+            return'🏋🏾'
+        case 'medium':
+            return'🏋🏽'
+        case 'medium-light':
+            return'🏋🏼'
+        case 'light':
+            return'🏋🏻'
+        default:
+            return'🏋️'
+    }
+}
+
+function manlifting_weights(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏋🏿‍♂️'
+        case 'medium-dark':
+            return'🏋🏾‍♂️'
+        case 'medium':
+            return'🏋🏽‍♂️'
+        case 'medium-light':
+            return'🏋🏼‍♂️'
+        case 'light':
+            return'🏋🏻‍♂️'
+        default:
+            return'🏋️‍♂️'
+    }
+}
+
+function womanlifting_weights(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🏋🏿‍♀️'
+        case 'medium-dark':
+            return'🏋🏾‍♀️'
+        case 'medium':
+            return'🏋🏽‍♀️'
+        case 'medium-light':
+            return'🏋🏼‍♀️'
+        case 'light':
+            return'🏋🏻‍♀️'
+        default:
+            return'🏋️‍♀️'
+    }
+}
+
+function personbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚴🏿'
+        case 'medium-dark':
+            return'🚴🏾'
+        case 'medium':
+            return'🚴🏽'
+        case 'medium-light':
+            return'🚴🏼'
+        case 'light':
+            return'🚴🏻'
+        default:
+            return'🚴'
+    }
+}
+
+function manbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚴🏿‍♂️'
+        case 'medium-dark':
+            return'🚴🏾‍♂️'
+        case 'medium':
+            return'🚴🏽‍♂️'
+        case 'medium-light':
+            return'🚴🏼‍♂️'
+        case 'light':
+            return'🚴🏻‍♂️'
+        default:
+            return'🚴‍♂️'
+    }
+}
+
+function womanbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚴🏿‍♀️'
+        case 'medium-dark':
+            return'🚴🏾‍♀️'
+        case 'medium':
+            return'🚴🏽‍♀️'
+        case 'medium-light':
+            return'🚴🏼‍♀️'
+        case 'light':
+            return'🚴🏻‍♀️'
+        default:
+            return'🚴‍♀️'
+    }
+}
+
+function personmountainbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚵🏿'
+        case 'medium-dark':
+            return'🚵🏾'
+        case 'medium':
+            return'🚵🏽'
+        case 'medium-light':
+            return'🚵🏼'
+        case 'light':
+            return'🚵🏻'
+        default:
+            return'🚵'
+    }
+}
+
+function manmountainbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚵🏿‍♂️'
+        case 'medium-dark':
+            return'🚵🏾‍♂️'
+        case 'medium':
+            return'🚵🏽‍♂️'
+        case 'medium-light':
+            return'🚵🏼‍♂️'
+        case 'light':
+            return'🚵🏻‍♂️'
+        default:
+            return'🚵‍♂️'
+    }
+}
+
+function womanmountainbiking(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🚵🏿‍♀️'
+        case 'medium-dark':
+            return'🚵🏾‍♀️'
+        case 'medium':
+            return'🚵🏽‍♀️'
+        case 'medium-light':
+            return'🚵🏼‍♀️'
+        case 'light':
+            return'🚵🏻‍♀️'
+        default:
+            return'🚵‍♀️'
+    }
+}
+
+function personcartwheeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤸🏿'
+        case 'medium-dark':
+            return'🤸🏾'
+        case 'medium':
+            return'🤸🏽'
+        case 'medium-light':
+            return'🤸🏼'
+        case 'light':
+            return'🤸🏻'
+        default:
+            return'🤸'
+    }
+}
+
+function mancartwheeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤸🏿‍♂️'
+        case 'medium-dark':
+            return'🤸🏾‍♂️'
+        case 'medium':
+            return'🤸🏽‍♂️'
+        case 'medium-light':
+            return'🤸🏼‍♂️'
+        case 'light':
+            return'🤸🏻‍♂️'
+        default:
+            return'🤸‍♂️'
+    }
+}
+
+function womancartwheeling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤸🏿‍♀️'
+        case 'medium-dark':
+            return'🤸🏾‍♀️'
+        case 'medium':
+            return'🤸🏽‍♀️'
+        case 'medium-light':
+            return'🤸🏼‍♀️'
+        case 'light':
+            return'🤸🏻‍♀️'
+        default:
+            return'🤸‍♀️'
+    }
+}
+
+function personplaying_water_polo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤽🏿'
+        case 'medium-dark':
+            return'🤽🏾'
+        case 'medium':
+            return'🤽🏽'
+        case 'medium-light':
+            return'🤽🏼'
+        case 'light':
+            return'🤽🏻'
+        default:
+            return'🤽'
+    }
+}
+
+function manplaying_water_polo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤽🏿‍♂️'
+        case 'medium-dark':
+            return'🤽🏾‍♂️'
+        case 'medium':
+            return'🤽🏽‍♂️'
+        case 'medium-light':
+            return'🤽🏼‍♂️'
+        case 'light':
+            return'🤽🏻‍♂️'
+        default:
+            return'🤽‍♂️'
+    }
+}
+
+function womanplaying_water_polo(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤽🏿‍♀️'
+        case 'medium-dark':
+            return'🤽🏾‍♀️'
+        case 'medium':
+            return'🤽🏽‍♀️'
+        case 'medium-light':
+            return'🤽🏼‍♀️'
+        case 'light':
+            return'🤽🏻‍♀️'
+        default:
+            return'🤽‍♀️'
+    }
+}
+
+function personplaying_handball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤾🏿'
+        case 'medium-dark':
+            return'🤾🏾'
+        case 'medium':
+            return'🤾🏽'
+        case 'medium-light':
+            return'🤾🏼'
+        case 'light':
+            return'🤾🏻'
+        default:
+            return'🤾'
+    }
+}
+
+function manplaying_handball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤾🏿‍♂️'
+        case 'medium-dark':
+            return'🤾🏾‍♂️'
+        case 'medium':
+            return'🤾🏽‍♂️'
+        case 'medium-light':
+            return'🤾🏼‍♂️'
+        case 'light':
+            return'🤾🏻‍♂️'
+        default:
+            return'🤾‍♂️'
+    }
+}
+
+function womanplaying_handball(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤾🏿‍♀️'
+        case 'medium-dark':
+            return'🤾🏾‍♀️'
+        case 'medium':
+            return'🤾🏽‍♀️'
+        case 'medium-light':
+            return'🤾🏼‍♀️'
+        case 'light':
+            return'🤾🏻‍♀️'
+        default:
+            return'🤾‍♀️'
+    }
+}
+
+function personjuggling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤹🏿'
+        case 'medium-dark':
+            return'🤹🏾'
+        case 'medium':
+            return'🤹🏽'
+        case 'medium-light':
+            return'🤹🏼'
+        case 'light':
+            return'🤹🏻'
+        default:
+            return'🤹'
+    }
+}
+
+function manjuggling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤹🏿‍♂️'
+        case 'medium-dark':
+            return'🤹🏾‍♂️'
+        case 'medium':
+            return'🤹🏽‍♂️'
+        case 'medium-light':
+            return'🤹🏼‍♂️'
+        case 'light':
+            return'🤹🏻‍♂️'
+        default:
+            return'🤹‍♂️'
+    }
+}
+
+function womanjuggling(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🤹🏿‍♀️'
+        case 'medium-dark':
+            return'🤹🏾‍♀️'
+        case 'medium':
+            return'🤹🏽‍♀️'
+        case 'medium-light':
+            return'🤹🏼‍♀️'
+        case 'light':
+            return'🤹🏻‍♀️'
+        default:
+            return'🤹‍♀️'
+    }
+}
+
+function personinlotus_position(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧘🏿'
+        case 'medium-dark':
+            return'🧘🏾'
+        case 'medium':
+            return'🧘🏽'
+        case 'medium-light':
+            return'🧘🏼'
+        case 'light':
+            return'🧘🏻'
+        default:
+            return'🧘'
+    }
+}
+
+function maninlotus_position(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧘🏿‍♂️'
+        case 'medium-dark':
+            return'🧘🏾‍♂️'
+        case 'medium':
+            return'🧘🏽‍♂️'
+        case 'medium-light':
+            return'🧘🏼‍♂️'
+        case 'light':
+            return'🧘🏻‍♂️'
+        default:
+            return'🧘‍♂️'
+    }
+}
+
+function womaninlotus_position(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧘🏿‍♀️'
+        case 'medium-dark':
+            return'🧘🏾‍♀️'
+        case 'medium':
+            return'🧘🏽‍♀️'
+        case 'medium-light':
+            return'🧘🏼‍♀️'
+        case 'light':
+            return'🧘🏻‍♀️'
+        default:
+            return'🧘‍♀️'
+    }
+}
+
+function persontaking_bath(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🛀🏿'
+        case 'medium-dark':
+            return'🛀🏾'
+        case 'medium':
+            return'🛀🏽'
+        case 'medium-light':
+            return'🛀🏼'
+        case 'light':
+            return'🛀🏻'
+        default:
+            return'🛀'
+    }
+}
+
+function personinbed(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🛌🏿'
+        case 'medium-dark':
+            return'🛌🏾'
+        case 'medium':
+            return'🛌🏽'
+        case 'medium-light':
+            return'🛌🏼'
+        case 'light':
+            return'🛌🏻'
+        default:
+            return'🛌'
+    }
+}
+
+function people_holding_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'🧑🏿‍🤝‍🧑🏿'
+        case 'medium-dark':
+            return'🧑🏾‍🤝‍🧑🏾'
+        case 'medium':
+            return'🧑🏽‍🤝‍🧑🏽'
+        case 'medium-light':
+            return'🧑🏼‍🤝‍🧑🏼'
+        case 'light':
+            return'🧑🏻‍🤝‍🧑🏻'
+        default:
+            return'🧑‍🤝‍🧑'
+    }
+}
+
+function womenholding_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👭🏿'
+        case 'medium-dark':
+            return'👭🏾'
+        case 'medium':
+            return'👭🏽'
+        case 'medium-light':
+            return'👭🏼'
+        case 'light':
+            return'👭🏻'
+        default:
+            return'👭'
+    }
+}
+
+function womanand_manholding_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👫🏿'
+        case 'medium-dark':
+            return'👫🏾'
+        case 'medium':
+            return'👫🏽'
+        case 'medium-light':
+            return'👫🏼'
+        case 'light':
+            return'👫🏻'
+        default:
+            return'👫'
+    }
+}
+
+function menholding_hands(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👬🏿'
+        case 'medium-dark':
+            return'👬🏾'
+        case 'medium':
+            return'👬🏽'
+        case 'medium-light':
+            return'👬🏼'
+        case 'light':
+            return'👬🏻'
+        default:
+            return'👬'
+    }
+}
+
+function kiss(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💏🏿'
+        case 'medium-dark':
+            return'💏🏾'
+        case 'medium':
+            return'💏🏽'
+        case 'medium-light':
+            return'💏🏼'
+        case 'light':
+            return'💏🏻'
+        default:
+            return'💏'
+    }
+}
+
+function kiss_womanman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍❤️‍💋‍👨🏿'
+        case 'medium-dark':
+            return'👩🏾‍❤️‍💋‍👨🏾'
+        case 'medium':
+            return'👩🏽‍❤️‍💋‍👨🏽'
+        case 'medium-light':
+            return'👩🏼‍❤️‍💋‍👨🏼'
+        case 'light':
+            return'👩🏻‍❤️‍💋‍👨🏻'
+        default:
+            return'👩‍❤️‍💋‍👨'
+    }
+}
+
+function kiss_manman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍❤️‍💋‍👨🏿'
+        case 'medium-dark':
+            return'👨🏾‍❤️‍💋‍👨🏾'
+        case 'medium':
+            return'👨🏽‍❤️‍💋‍👨🏽'
+        case 'medium-light':
+            return'👨🏼‍❤️‍💋‍👨🏼'
+        case 'light':
+            return'👨🏻‍❤️‍💋‍👨🏻'
+        default:
+            return'👨‍❤️‍💋‍👨'
+    }
+}
+
+function kiss_womanwoman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍❤️‍💋‍👩🏿'
+        case 'medium-dark':
+            return'👩🏾‍❤️‍💋‍👩🏾'
+        case 'medium':
+            return'👩🏽‍❤️‍💋‍👩🏽'
+        case 'medium-light':
+            return'👩🏼‍❤️‍💋‍👩🏼'
+        case 'light':
+            return'👩🏻‍❤️‍💋‍👩🏻'
+        default:
+            return'👩‍❤️‍💋‍👩'
+    }
+}
+
+function couple_with_heart(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'💑🏿'
+        case 'medium-dark':
+            return'💑🏾'
+        case 'medium':
+            return'💑🏽'
+        case 'medium-light':
+            return'💑🏼'
+        case 'light':
+            return'💑🏻'
+        default:
+            return'💑'
+    }
+}
+
+function couple_with_heart_womanman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍❤️‍👨🏿'
+        case 'medium-dark':
+            return'👩🏾‍❤️‍👨🏾'
+        case 'medium':
+            return'👩🏽‍❤️‍👨🏽'
+        case 'medium-light':
+            return'👩🏼‍❤️‍👨🏼'
+        case 'light':
+            return'👩🏻‍❤️‍👨🏻'
+        default:
+            return'👩‍❤️‍👨'
+    }
+}
+
+function couple_with_heart_manman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👨🏿‍❤️‍👨🏿'
+        case 'medium-dark':
+            return'👨🏾‍❤️‍👨🏾'
+        case 'medium':
+            return'👨🏽‍❤️‍👨🏽'
+        case 'medium-light':
+            return'👨🏼‍❤️‍👨🏼'
+        case 'light':
+            return'👨🏻‍❤️‍👨🏻'
+        default:
+            return'👨‍❤️‍👨'
+    }
+}
+
+function couple_with_heart_womanwoman(tone: SkinTones) {
+    switch(tone) {
+        case 'dark':
+            return'👩🏿‍❤️‍👩🏿'
+        case 'medium-dark':
+            return'👩🏾‍❤️‍👩🏾'
+        case 'medium':
+            return'👩🏽‍❤️‍👩🏽'
+        case 'medium-light':
+            return'👩🏼‍❤️‍👩🏼'
+        case 'light':
+            return'👩🏻‍❤️‍👩🏻'
+        default:
+            return'👩‍❤️‍👩'
+    }
+}
+
