@@ -11,7 +11,9 @@ $ npm install emojitone
 Using EmojiTone is as simple as importing it, and passing in any supported emoji and a tone.
 ```ts
 import { et } from 'emojitone'
-et(emoji: 👋, tone: 'medium-dark)
+
+// Returns 👋🏾
+et(👋, 'medium-dark)
 ```
 
 
