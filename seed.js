@@ -186,7 +186,7 @@ rl.on('line', function (text) {
         + "\n"
         + "## Recommended practices"
         + "\n"
-        + "It is a good idea to combine this package with simple state management on your end. I have built a simple example Next.js application which stores the state in the browser's localestorage to show you what this might look like. Here is a link to it running live."
+        + "It is a good idea to combine this package with simple state management on your end. I have built a simple example Next.js application which stores the state in the browser's localestorage to show you what this might look like. Here is [a link](https://emojitone-example.vercel.app) to it running live."
         + "\n"
         + "## Currently supported emoji:"
         + "\n"
