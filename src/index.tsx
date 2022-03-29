@@ -1,6 +1,6 @@
 import { SkinToneEmojis, SkinTones } from './types'
 
-export const emojiTone = (emoji: SkinToneEmojis, tone: SkinTones) => {
+export const et = (emoji: SkinToneEmojis, tone: SkinTones) => {
     switch (emoji) {
         case '👋':
             return waving_hand(tone)
