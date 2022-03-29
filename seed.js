@@ -145,7 +145,9 @@ rl.on('line', function (text) {
 
     f.writeFileSync('README.md', "# EmojiTone"
         + "\n"
-        + "The list of currently supported emoji is:"
+        + "### The list of currently supported emoji is:"
+        + "\n"
+        + "<br />"
         + "\n"
         + defaultEmojiArray.join(" ").replaceAll("'", "")
     )
