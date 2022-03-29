@@ -80,30 +80,68 @@ rl.on('line', function (text) {
         }
     })
 
+    let defaultEmojiArray = []
+    let indexFileImports = ""
+    let indexFileCases = ""
+
     for (var i = 0; i < filteredArray.length; i++) {
         fileToGen = filteredArray[i]
+        defaultEmojiArray.push("'" + fileToGen.default + "'")
+        indexFileImports = indexFileImports
+            + "import { "
+            + fileToGen.name
+            + " } from './emojis/"
+            + fileToGen.name
+            + "'\n"
+
+        indexFileCases = indexFileCases
+            + "        case '"
+            + fileToGen.default
+            + "':\n"
+            + "            return "
+            + fileToGen.name
+            + "(tone)"
+            + "\n"
 
         f.writeFileSync(__dirname + '/src/emojis/' + fileToGen.name + '.ts',
-            "import { SkinTones } from '../types'\nexport function "
+            "import { SkinTones } from '../types'\n\nexport function "
             + fileToGen.name
-            + "(tone: SkinTones) {\nswitch(tone) {\ncase 'dark':\nreturn'"
+            + "(tone: SkinTones) {\n"
+            + "    switch(tone) {\n        case 'dark':\n            return'"
             + fileToGen.dark
-            + "'\ncase 'medium-dark':\nreturn'"
+            + "'\n        case 'medium-dark':\n            return'"
             + fileToGen.medium_dark
-            + "'\ncase 'medium':\nreturn'"
+            + "'\n        case 'medium':\n            return'"
             + fileToGen.medium
-            + "'\ncase 'medium-light':\nreturn'"
+            + "'\n        case 'medium-light':\n            return'"
             + fileToGen.medium_light
-            + "'\ncase 'light':\nreturn'"
+            + "'\n        case 'light':\n            return'"
             + fileToGen.light
-            + "'\ndefault:\nreturn'"
+            + "'\n        default:\n            return'"
             + fileToGen.default
-            + "'\n}\n}"
+            + "'\n    }\n}"
         )
     }
 
+    f.writeFileSync(__dirname + '/src/types.ts',
+        "export type SkinTones = 'default' | 'dark' | 'medium-dark' | 'medium' | 'medium-light' | 'light'\n"
+        + "export type SkinToneEmojis = "
+        + defaultEmojiArray.join(" |")
+    )
 
-    console.log(filteredArray) // has its values now
+    f.writeFileSync(__dirname + '/src/index.tsx',
+        "import { SkinToneEmojis, SkinTones } from './types'\n"
+        + indexFileImports
+        + "\n"
+        + "export const emojiTone = (emoji: SkinToneEmojis, tone: SkinTones) => {\n"
+        + "    switch (emoji) {\n"
+        + indexFileCases
+        + "        default:\n"
+        + "            return '👋'"
+        + "\n"
+        + "    }\n"
+        + "}"
+    )
 });
 
 function updateGenerationArray(generationArray, name, emoji, tone) {
