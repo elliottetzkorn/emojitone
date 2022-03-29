@@ -147,7 +147,7 @@ rl.on('line', function (text) {
         + "\n"
         + "The list of currently supported emoji is:"
         + "\n"
-        + defaultEmojiArray.join(" ")
+        + defaultEmojiArray.join(" ").replaceAll("'", "")
     )
 });
 
