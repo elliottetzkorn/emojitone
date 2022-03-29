@@ -4,8 +4,8 @@ Emoji are useful tools for communicating application behavior. I recently finish
 ## Install
 ```bash
 $ npm install emojitone
- # or
- $ yarn add emojitone
+# or
+$ yarn add emojitone
 ```
 ## Use
 Using EmojiTone is as simple as importing it, and passing in any supported emoji and a tone.
