@@ -167,7 +167,7 @@ rl.on('line', function (text) {
         + "\n"
         + "// Returns 👋🏾"
         + "\n"
-        + "et(👋, 'medium-dark')"
+        + "et('👋', 'medium-dark')"
         + "\n"
         + "```"
         + "\n"

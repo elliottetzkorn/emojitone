@@ -1,7 +1,7 @@
 {
   "name": "emojitone",
   "description": "A package for returning emojis with tones",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "source": "src/main.ts",
   "main": "dist/main.umd.js",
   "module": "dist/main.modern.module.js",

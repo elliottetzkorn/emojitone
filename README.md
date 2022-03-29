@@ -13,7 +13,7 @@ Using EmojiTone is as simple as importing it and passing in any supported emoji 
 import { et } from 'emojitone'
 
 // Returns 👋🏾
-et(👋, 'medium-dark')
+et('👋', 'medium-dark')
 ```
 The accepted tones are:
 * `dark`
