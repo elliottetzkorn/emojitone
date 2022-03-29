@@ -123,7 +123,7 @@ rl.on('line', function (text) {
         + defaultEmojiArray.join(" |")
     )
 
-    f.writeFileSync(__dirname + '/src/index.tsx',
+    f.writeFileSync(__dirname + '/src/index.ts',
         "import { SkinToneEmojis, SkinTones } from './types'\n"
         + "\n"
         + "export const et = (emoji: SkinToneEmojis, tone: SkinTones) => {\n"
