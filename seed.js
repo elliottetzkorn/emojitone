@@ -142,6 +142,13 @@ rl.on('line', function (text) {
         + "    }\n"
         + "}"
     )
+
+    f.writeFileSync('README.md', "# EmojiTone"
+        + "\n"
+        + "The list of currently supported emoji is:"
+        + "\n"
+        + defaultEmojiArray.join(" ")
+    )
 });
 
 function updateGenerationArray(generationArray, name, emoji, tone) {
