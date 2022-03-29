@@ -16,11 +16,11 @@ import { et } from 'emojitone'
 et(👋, 'medium-dark')
 ```
 The accepted tones are:
-* 'dark'
-* 'medium-dark'
-* 'medium'
-* 'medium-light'
-* 'light'
+* `dark`
+* `medium-dark`
+* `medium`
+* `medium-light`
+* `light`
 
 ## Recommended practices
 It is a good idea to combine this package with simple state management on your end. I have included in this repository an example Next.js application which stores the state in the browser's localestorage. Here is a link to it running live.
